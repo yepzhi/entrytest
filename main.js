@@ -2,14 +2,14 @@ import questions from './questions.js';
 import translations from './translations.js';
 
 // --- Firebase Configuration ---
-// USER: Substitute this placeholder with your actual project config from Firebase Console
 const firebaseConfig = {
-    apiKey: "AIzaSy...", 
-    authDomain: "jovenesstem-test.firebaseapp.com",
-    projectId: "jovenesstem-test",
-    storageBucket: "jovenesstem-test.appspot.com",
-    messagingSenderId: "...",
-    appId: "..."
+  apiKey: "AIzaSyC4KzcV9qEWUyc0kmv4sN8Jqd__EC2hW0E",
+  authDomain: "entrytest-1080e.firebaseapp.com",
+  projectId: "entrytest-1080e",
+  storageBucket: "entrytest-1080e.firebasestorage.app",
+  messagingSenderId: "632427082682",
+  appId: "1:632427082682:web:7c01a82361ecefd372e383",
+  measurementId: "G-0GRNWR76Q7"
 };
 
 // Initialize Firebase (Compat)
