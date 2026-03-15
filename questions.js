@@ -1068,7 +1068,6 @@ const questions = [
         ],
         answer: 1,
         points: 1
-    }
     },
     {
         category: "Tecnología e Innovación",
