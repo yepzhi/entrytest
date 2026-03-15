@@ -112,7 +112,34 @@ h2 { font-size: 1.8rem; margin-bottom: 30px; }
     margin-bottom: 30px;
     transition: all 0.3s ease;
 }
+/* PISA Badge */
+.pisa-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
 
+.pisa-badge img {
+    height: 24px;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+.footnote {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-top: 20px;
+    opacity: 0.6;
+    line-height: 1.4;
+}
 .user-info input:focus {
     outline: none;
     border-color: var(--primary);
