@@ -221,7 +221,7 @@ const questions = [
         question: "¿Qué es la fusión termonuclear?",
         options: [
             "Es presionar átomos con presión y calor hasta que se unen y forman uno nuevo",
-            "Es dividir átomos con presión y calor hasta que se separan en dos átomos individuales"
+            "Es dividir átomos con presión y calor hasta que se sepan en dos átomos individuales"
         ],
         answer: 0,
         points: 1
@@ -241,7 +241,7 @@ const questions = [
         question: "¿Qué es un disco de acreción?",
         options: [
             "Se llamaba así a los discos en que se guardaba la información digital en las empresas de desarrollo tecnológico.",
-            "Es el aglutinamiento de material alrededor de una estrella derivado de estos discos se forman los plantas en un sistema planetario.",
+            "Es el aglutinamiento de material alrededor de una estrella derivado de estos discos se forman los planetas en un sistema planetario.",
             "Es una tecnología novedosa de almacenamiento de datos, la siguiente generación después de los discos en estado sólido.."
         ],
         answer: 1,
@@ -757,8 +757,18 @@ const questions = [
         category: "Física",
         question: "¿Qué pretende ser la Theory of Everything (ToE) ó Teoría del Todo?",
         options: [
+            "Una teoría que fusione matemáticamente la energía y materia oscuras (incluyendo la gravedad) y puedan tener sentido juntas.",
+            "Una teoría que explique de donde venimos y hacia donde vamos en términos de expansionismo del Universo."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Física",
+        question: "¿Qué pretende ser la Theory of Everything (ToE) ó Teoría del Todo?",
+        options: [
             "Una teoría que fusione la relatividad con la energía y materia oscuras y las fuerzas fundamentales (incluyendo la gravedad) y puedan tener sentido juntas.",
-            "Una teoría que explique matemáticamente de donde venimos y hacia donde vamos en términos de expansionismo del Universo."
+            "Una teoría que explique matemáticamente de donde venimos y hacia donde vamos en términos de posicionismo del Universo."
         ],
         answer: 0,
         points: 1
@@ -800,7 +810,7 @@ const questions = [
         category: "Biología",
         question: "¿Qué son las hormonas?",
         options: [
-            "Son menajeras, después de ser secretadas viajan por todo el torrente sanguíneo llevando instrucciones de activación/desactivación de funciones muy variadas.",
+            "Son mensajeras, después de ser secretadas viajan por todo el torrente sanguíneo llevando instrucciones de activación/desactivación de funciones muy variadas.",
             "Son excretadas al exterior para atraer al sexo opuesto.",
             "Son medicamentos utilizados para regular los niveles de ciertos componentes sanguíneos."
         ],
@@ -822,9 +832,9 @@ const questions = [
         category: "Química",
         question: "A nivel de estructura atómica, ¿Cuál es la principal diferencia entre un elemento y otro?.",
         options: [
-            "La tempertura donde fue creado.",
+            "La temperatura donde fue creado.",
             "Carbono",
-            "El numero ó cantidad de protones, neutrones y electrones."
+            "El número ó cantidad de protones, neutrones y electrones."
         ],
         answer: 2,
         points: 1
@@ -835,226 +845,6 @@ const questions = [
         options: [
             "En los electrones que orbitan por su energía cinética.",
             "El núcleo del mismo donde están los protones y neutrones."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Ingeniería de Hardware",
-        question: "En la industria de los microchips, ¿qué representa la medida de 'nanómetros' (nm)?",
-        options: [
-            "El tamaño total del procesador físico.",
-            "La distancia entre transistores; a menor número, mayor eficiencia y potencia.",
-            "La velocidad de rotación de los ventiladores de enfriamiento."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Conectividad",
-        question: "¿Cuál es la principal diferencia técnica entre 4G y 5G más allá de la velocidad?",
-        options: [
-            "El 5G usa cables de fibra óptica invisibles en el aire.",
-            "La latencia; el 5G reduce drásticamente el tiempo de respuesta para IA y autonomía.",
-            "El 5G es solo para teléfonos inteligentes, no para computadoras."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Ingeniería de Hardware",
-        question: "¿Por qué el Silicio es el material base de la electrónica moderna?",
-        options: [
-            "Porque es un excelente conductor como el oro pero más barato.",
-            "Porque es un semiconductor que permite controlar el flujo de electricidad con precisión.",
-            "Porque es un material aislante que evita cortocircuitos."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Tecnología",
-        question: "¿Qué es la 'Arquitectura de Computadoras'?",
-        options: [
-            "El diseño visual de las carcasas y gabinetes.",
-            "La estructura lógica y diseño operativo de un sistema de computación.",
-            "La forma en que se conectan los monitores a la corriente."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Pensamiento Computacional",
-        question: "¿Qué es un algoritmo en el contexto del software?",
-        options: [
-            "Una clave secreta para entrar a redes sociales.",
-            "Un conjunto de instrucciones paso a paso para resolver un problema.",
-            "Un error en el código que hace que la computadora se apague."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Programación",
-        question: "En programación, ¿qué es una 'variable'?",
-        options: [
-            "Un valor que nunca cambia durante la ejecución del programa.",
-            "Un espacio en memoria para almacenar un dato que puede cambiar.",
-            "Un tipo de pantalla de alta resolución."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Programación",
-        question: "¿Cuál de estos es un lenguaje de programación de alto nivel muy usado en Ciencia de Datos e IA?",
-        options: [
-            "HTML",
-            "Python",
-            "CSS"
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Arquitectura de Software",
-        question: "¿Qué significa el término 'Front-end'?",
-        options: [
-            "La parte del software que interactúa directamente con el usuario (interfaz).",
-            "La base de datos donde se guarda toda la información.",
-            "El procesador físico dentro del servidor."
-        ],
-        answer: 0,
-        points: 1
-    },
-    {
-        category: "Lógica Binaria",
-        question: "Si una computadora solo entiende 0 y 1, ¿cómo se llama este sistema numérico?",
-        options: [
-            "Sistema Decimal",
-            "Sistema Binario",
-            "Sistema Cuántico"
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Inteligencia Artificial",
-        question: "¿Qué es el 'Machine Learning' (Aprendizaje Automático)?",
-        options: [
-            "Una máquina que aprende a escribir sola como un humano.",
-            "Algoritmos que permiten a las computadoras aprender patrones a partir de datos.",
-            "Es simplemente otro nombre para el internet de las cosas (IoT)."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Tecnología",
-        question: "¿Qué es la 'Nube' (Cloud Computing)?",
-        options: [
-            "Satélites que transmiten internet desde la atmósfera.",
-            "Servidores remotos en centros de datos accesibles vía internet.",
-            "Un tipo de almacenamiento que usa vapor de agua para enfriarse."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Ciberseguridad",
-        question: "¿Qué es el cifrado de extremo a extremo?",
-        options: [
-            "Una forma de hacer que el internet sea más rápido.",
-            "Un método de seguridad donde solo el emisor y receptor pueden leer el mensaje.",
-            "Un sistema para bloquear anuncios en el navegador."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Pensamiento Computacional",
-        question: "¿Qué representa un diagrama de flujo?",
-        options: [
-            "Un mapa de las corrientes eléctricas en un circuito.",
-            "La representación gráfica de un algoritmo o proceso.",
-            "Un diseño para decorar una oficina de ingeniería."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Inteligencia Artificial",
-        question: "¿Qué es un 'LLM' (Large Language Model) como ChatGPT?",
-        options: [
-            "Un robot físico que habla múltiples idiomas.",
-            "Un modelo de IA entrenado con billones de palabras para generar texto coherente.",
-            "Una enciclopedia digital que se actualiza cada segundo."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Ingeniería de Hardware",
-        question: "¿Qué es una GPU y para qué sirve principalmente hoy?",
-        options: [
-            "Unidad de Procesamiento Gráfico, vital para visualización avanzada y entrenamiento de IA.",
-            "Generador de Potencia Unificado, sirve para dar energía a la tarjeta madre.",
-            "Disco duro de alta velocidad."
-        ],
-        answer: 0,
-        points: 1
-    },
-    {
-        category: "Ética Tecnológica",
-        question: "¿Qué es un 'sesgo' (bias) en un modelo de Inteligencia Artificial?",
-        options: [
-            "Una falla eléctrica en el servidor.",
-            "Prejuicios en los datos de entrenamiento que causan resultados injustos o erróneos.",
-            "La capacidad de la IA para superar al ser humano."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Conectividad",
-        question: "¿Qué es el IoT (Internet de las Cosas)?",
-        options: [
-            "Una red social para objetos inanimados.",
-            "La interconexión digital de objetos cotidianos con internet.",
-            "Un sistema de satélites para rastrear el clima."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Programación",
-        question: "En programación, ¿qué hace un 'bucle' (loop)?",
-        options: [
-            "Detiene el programa inmediatamente.",
-            "Repite un bloque de instrucciones mientras se cumpla una condición.",
-            "Borra los datos de la memoria RAM."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Tecnología",
-        question: "¿Qué es el 'Open Source' (Código Abierto)?",
-        options: [
-            "Software que es gratis pero oculto.",
-            "Software cuyo código fuente está disponible para que cualquiera lo vea, use y modifique.",
-            "Un sistema operativo que solo funciona en computadoras potentes."
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Futuro del Trabajo",
-        question: "¿Qué habilidad STEM se considera 'el nuevo lenguaje universal' del siglo XXI?",
-        options: [
-            "Hablar inglés técnico perfectamente.",
-            "La Programación / Pensamiento Computacional.",
-            "Saber usar redes sociales de forma profesional."
         ],
         answer: 1,
         points: 1
