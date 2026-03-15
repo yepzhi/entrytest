@@ -6,6 +6,17 @@ const state = {
     currentQuestionIndex: 0,
     answers: new Array(questions.length).fill(null),
     userEmail: '',
+    surveyData: {
+        firstName: '',
+        lastName: '',
+        school: 'demo',
+        age: '',
+        phone: 'android',
+        homeInternet: 'yes',
+        computer: 'yes',
+        schoolInternet: 'yes',
+        stemInterest: 'yes'
+    },
     startTime: null,
     endTime: null,
     language: 'es',
@@ -16,13 +27,25 @@ const state = {
 // DOM Elements
 const screens = {
     welcome: document.getElementById('welcome'),
+    survey: document.getElementById('survey'),
     quiz: document.getElementById('quiz'),
     results: document.getElementById('results')
 };
 
 const elements = {
     startBtn: document.getElementById('startBtn'),
+    beginTestBtn: document.getElementById('beginTestBtn'),
     userEmail: document.getElementById('userEmail'),
+    
+    // Survey Fields
+    firstName: document.getElementById('firstName'),
+    lastName: document.getElementById('lastName'),
+    schoolSelect: document.getElementById('schoolSelect'),
+    ageInput: document.getElementById('ageInput'),
+    phoneToggle: document.getElementById('phoneToggle'),
+    miniToggles: document.querySelectorAll('.mini-toggle'),
+    stemInterestToggle: document.getElementById('stemInterest'),
+
     questionText: document.getElementById('questionText'),
     optionsContainer: document.getElementById('optionsContainer'),
     progressBar: document.getElementById('progressBar'),
@@ -43,7 +66,8 @@ const elements = {
 function init() {
     elements.totalQuestionsNum.textContent = questions.length;
     
-    elements.startBtn.addEventListener('click', startQuiz);
+    elements.startBtn.addEventListener('click', goToSurvey);
+    elements.beginTestBtn.addEventListener('click', startQuiz);
     elements.prevBtn.addEventListener('click', showPrevious);
     elements.nextBtn.addEventListener('click', showNext);
     elements.retryBtn.addEventListener('click', resetQuiz);
@@ -54,10 +78,45 @@ function init() {
         });
     });
 
+    // Toggle logic for Survey
+    setupToggles();
+
     // Detect browser language or default to ES
     const browserLang = navigator.language.split('-')[0];
     if (translations[browserLang]) setLanguage(browserLang);
     else setLanguage('es');
+}
+
+function setupToggles() {
+    // Phone Toggle
+    elements.phoneToggle.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            elements.phoneToggle.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            state.surveyData.phone = btn.dataset.val;
+        });
+    });
+
+    // Mini Toggles (Home internet, Computer, School internet)
+    elements.miniToggles.forEach(toggle => {
+        const key = toggle.dataset.key;
+        toggle.querySelectorAll('.toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                toggle.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.surveyData[key] = btn.dataset.val;
+            });
+        });
+    });
+
+    // STEM Interest Toggle
+    elements.stemInterestToggle.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            elements.stemInterestToggle.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            state.surveyData.stemInterest = btn.dataset.val;
+        });
+    });
 }
 
 // Language Logic
@@ -76,6 +135,8 @@ function setLanguage(lang) {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) {
             el.innerHTML = translations[lang][key];
+        } else {
+            console.warn(`Translation key not found: ${key} for lang: ${lang}`);
         }
     });
 
@@ -115,16 +176,29 @@ function updateTimeDisplay() {
 }
 
 // Navigation
-function startQuiz() {
+function goToSurvey() {
     const email = elements.userEmail.value.trim();
     if (!email || !email.includes('@')) {
         alert(state.language === 'en' ? 'Please enter a valid email to continue.' : 'Por favor, introduce un correo electrónico válido.');
         return;
     }
-    
     state.userEmail = email;
+    switchScreen('survey');
+}
+
+function startQuiz() {
+    // Collect survey data
+    state.surveyData.firstName = elements.firstName.value.trim();
+    state.surveyData.lastName = elements.lastName.value.trim();
+    state.surveyData.school = elements.schoolSelect.value;
+    state.surveyData.age = elements.ageInput.value;
+
+    if (!state.surveyData.firstName || !state.surveyData.lastName) {
+        alert(state.language === 'en' ? 'Please fill in your name and last name.' : 'Por favor, completa tu nombre y apellido.');
+        return;
+    }
+
     state.startTime = new Date();
-    
     switchScreen('quiz');
     startTimer();
     loadQuestion();
@@ -133,6 +207,7 @@ function startQuiz() {
 function switchScreen(screenKey) {
     Object.values(screens).forEach(screen => screen.classList.remove('active'));
     screens[screenKey].classList.add('active');
+    window.scrollTo(0, 0);
 }
 
 function loadQuestion() {
@@ -244,12 +319,14 @@ function calculateResults() {
         
         // Trigger animation after append
         setTimeout(() => {
-            catRow.querySelector('.cat-bar-fill').style.width = `${catPercentage}%`;
+            const bar = catRow.querySelector('.cat-bar-fill');
+            if (bar) bar.style.width = `${catPercentage}%`;
         }, 100);
     });
 }
 
 function animateValue(obj, start, end, duration) {
+    if (!obj) return;
     let startTimestamp = null;
     const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
@@ -266,6 +343,9 @@ function resetQuiz() {
     state.currentQuestionIndex = 0;
     state.answers = new Array(questions.length).fill(null);
     elements.userEmail.value = '';
+    elements.firstName.value = '';
+    elements.lastName.value = '';
+    elements.ageInput.value = '';
     elements.timerDisplay.style.display = 'none';
     switchScreen('welcome');
 }
