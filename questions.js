@@ -848,7 +848,7 @@ const questions = [
         ],
         answer: 1,
         points: 1
-    }
+    },
     {
         category: "Tecnología Básica",
         question: "¿Qué significa la 'G' en la tecnología 5G?",

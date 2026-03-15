@@ -24,7 +24,7 @@ try {
 // Application State
 const state = {
     currentQuestionIndex: 0,
-    answers: new Array(questions.length).fill(null),
+    answers: [],
     userEmail: '',
     surveyData: {
         firstName: '',
@@ -96,6 +96,7 @@ const elements = {
 
 // Initialization
 function init() {
+    state.answers = new Array(questions.length).fill(null);
     elements.totalQuestionsNum.textContent = questions.length;
     
     elements.startBtn.addEventListener('click', goToSurvey);
