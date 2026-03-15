@@ -32,6 +32,7 @@ body {
     width: 100%;
     max-width: 1200px;
     padding: 20px;
+    padding-top: 100px; /* Space for top-bar */
     z-index: 10;
     position: relative;
 }
@@ -40,8 +41,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
 .lang-toggle {

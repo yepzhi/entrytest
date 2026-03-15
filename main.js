@@ -235,8 +235,40 @@ function switchScreen(screenKey) {
 
 function loadQuestion() {
     const question = questions[state.currentQuestionIndex];
+    
+    // Category mapping for translations
+    const categoryMap = {
+        "Tecnología e Innovación": "cat_tech",
+        "Fundamentos STEM": "cat_science",
+        "Tecnología y Código": "cat_code",
+        "Ciencia y Sociedad": "cat_science",
+        "Ciencia y Medio Ambiente": "cat_science",
+        "Estándares Tecnológicos": "cat_tech",
+        "Educación STEM": "cat_science",
+        "Ciencia": "cat_science",
+        "Cosmología": "cat_astro",
+        "Astrofísica": "cat_astro",
+        "Física de Partículas": "cat_phys",
+        "Física Nuclear": "cat_phys",
+        "Aeroespacial": "cat_eng",
+        "Sistema Solar": "cat_astro",
+        "Astronomía": "cat_astro",
+        "Biología": "cat_bio",
+        "Química": "cat_chem",
+        "Energía": "cat_phys",
+        "Ingeniería de Hardware": "cat_eng",
+        "Código para Principiantes": "cat_code",
+        "Futuro del Trabajo": "cat_future",
+        "Futuro": "cat_future",
+        "Pensamiento Computacional": "cat_logic",
+        "Tecnología Básica": "cat_tech",
+        "Física": "cat_phys",
+        "Historia Natural": "cat_bio"
+    };
+
+    const catKey = categoryMap[question.category] || 'cat_badge';
+    elements.categoryBadge.textContent = translations[state.language][catKey] || question.category;
     elements.questionText.textContent = question.question;
-    elements.categoryBadge.textContent = question.category;
     elements.currentQuestionNum.textContent = state.currentQuestionIndex + 1;
     
     const progress = ((state.currentQuestionIndex + 1) / questions.length) * 100;
@@ -370,10 +402,26 @@ function animateValue(obj, start, end, duration) {
 function resetQuiz() {
     state.currentQuestionIndex = 0;
     state.answers = new Array(questions.length).fill(null);
+    state.secondsElapsed = 0;
+    
+    // Clear survey data
+    Object.keys(state.surveyData).forEach(key => {
+        state.surveyData[key] = (key === 'school') ? 'demo' : (['firstName', 'lastName', 'age'].includes(key) ? '' : 'yes');
+    });
+    
+    // Reset UI fields
     elements.userEmail.value = '';
     elements.firstName.value = '';
     elements.lastName.value = '';
     elements.ageInput.value = '';
+    elements.schoolSelect.value = 'demo';
+    
+    // Reset Toggles to 'Yes' or default
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+        if (btn.dataset.val === 'yes' || btn.dataset.val === 'android') btn.classList.add('active');
+        else btn.classList.remove('active');
+    });
+
     elements.timerDisplay.style.display = 'none';
     switchScreen('welcome');
 }
