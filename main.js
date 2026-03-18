@@ -276,32 +276,11 @@ function loadQuestion() {
     
     // Category mapping for translations
     const categoryMap = {
-        "Tecnología e Innovación": "cat_tech",
-        "Fundamentos STEM": "cat_science",
-        "Tecnología y Código": "cat_code",
-        "Ciencia y Sociedad": "cat_science",
-        "Ciencia y Medio Ambiente": "cat_science",
-        "Estándares Tecnológicos": "cat_tech",
-        "Educación STEM": "cat_science",
-        "Ciencia": "cat_science",
-        "Cosmología": "cat_astro",
-        "Astrofísica": "cat_astro",
-        "Física de Partículas": "cat_phys",
-        "Física Nuclear": "cat_phys",
-        "Aeroespacial": "cat_eng",
-        "Sistema Solar": "cat_astro",
-        "Astronomía": "cat_astro",
-        "Biología": "cat_bio",
-        "Química": "cat_chem",
-        "Energía": "cat_phys",
-        "Ingeniería de Hardware": "cat_eng",
-        "Código para Principiantes": "cat_code",
-        "Futuro del Trabajo": "cat_future",
-        "Futuro": "cat_future",
-        "Pensamiento Computacional": "cat_logic",
+        "Ciencia General": "cat_science",
         "Tecnología Básica": "cat_tech",
-        "Física": "cat_phys",
-        "Historia Natural": "cat_bio"
+        "Pensamiento Lógico": "cat_logic",
+        "Cultura Digital": "cat_code",
+        "STEM y Sociedad": "cat_future"
     };
 
     const catKey = categoryMap[question.category] || 'cat_badge';
