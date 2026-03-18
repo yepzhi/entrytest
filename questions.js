@@ -4,7 +4,9 @@ const questions = [
         question: "¿Qué representa el caso de un iPhone último modelo?",
         options: [
             "Es un teléfono celular y nada más.",
-            "Es expresión y representación de nuestros avances científicos más nuevos."
+            "Es expresión y representación de nuestros avances científicos más nuevos.",
+            "Es un producto de lujo sin relación con la ciencia.",
+            "Es una herramienta exclusiva para programadores."
         ],
         answer: 1,
         points: 1
@@ -15,7 +17,8 @@ const questions = [
         options: [
             "Es Sociedad, Técnica, Economía y Matemáticas.",
             "Es Ciencia, Tecnología, Ecología y Medición.",
-            "Es Ciencia, Tecnología, Ingeniería y Matemáticas."
+            "Es Ciencia, Tecnología, Ingeniería y Matemáticas.",
+            "Es Sistemas, Telecomunicaciones, Electrónica y Mecánica."
         ],
         answer: 2,
         points: 1
@@ -26,7 +29,8 @@ const questions = [
         options: [
             "Este enfoque es el único capaz de crear la base de todo avance tecnológico: la innovación.",
             "Este enfoque es el único capaz de crear acabar con la violencia social.",
-            "Este enfoque es el único capaz eliminar las fronteras y la discriminación."
+            "Este enfoque es el único capaz eliminar las fronteras y la discriminación.",
+            "Este enfoque solo es útil para quienes quieren ser científicos profesionales."
         ],
         answer: 0,
         points: 1
@@ -37,7 +41,8 @@ const questions = [
         options: [
             "El código es el lenguaje que habla nuestra tecnología.",
             "El código es una clave que se usa para desbloquear nuestra tecnología.",
-            "El código es una ley universal que se usa en la tecnología."
+            "El código es una ley universal que se usa en la tecnología.",
+            "El código es un idioma que solo hablan los robots."
         ],
         answer: 0,
         points: 1
@@ -48,7 +53,8 @@ const questions = [
         options: [
             "Tener procesadores más rápidos y eficientes y acelerar la transición a la electromóvilidad.",
             "La sustentabilidad (ser sustentables) y el combate por el cambio climático.",
-            "Lograr computadoras cuánticas y lograr una fusión nuclear estable."
+            "Lograr computadoras cuánticas y lograr una fusión nuclear estable.",
+            "Crear redes sociales más entretenidas y videojuegos más realistas."
         ],
         answer: 1,
         points: 1
@@ -59,7 +65,8 @@ const questions = [
         options: [
             "El código es el lenguaje de nuestra Ciencia y la Tecnología es el resultado de estas dos.",
             "La tecnología es el lenguaje que habla nuestra ciencia y el código es una disciplina aparte.",
-            "La tecnología es el máximo exponente de la ciencia y el código es el medio que los une siendo así el lenguaje que habla la tecnología."
+            "La tecnología es el máximo exponente de la ciencia y el código es el medio que los une siendo así el lenguaje que habla la tecnología.",
+            "Las tres son disciplinas completamente independientes que no se relacionan entre sí."
         ],
         answer: 2,
         points: 1
@@ -70,7 +77,8 @@ const questions = [
         options: [
             "Es un dispositivo que lleva los conocimientos científicos y de ingeniería humana al límite.",
             "Es una técnica que se usa para que se hagan los anteriores obsoletos más rápido.",
-            "Es la forma que usan las empresas para vender más, solo le cambian el nombre."
+            "Es la forma que usan las empresas para vender más, solo le cambian el nombre.",
+            "Es un producto idéntico al anterior pero con una carcasa diferente."
         ],
         answer: 0,
         points: 1
@@ -81,7 +89,8 @@ const questions = [
         options: [
             "Hacer en un diseño atractivo visualmente sin importar el costo solo que sea confiable.",
             "Hacerla comercialmente viable (abaratar su costo), fácil de usar y práctica para que sea adoptada por las masas.",
-            "Que sea compatible con las tecnologías actuales."
+            "Que sea compatible con las tecnologías actuales.",
+            "Que sea tan compleja que solo los expertos puedan usarla."
         ],
         answer: 1,
         points: 1
@@ -92,7 +101,8 @@ const questions = [
         options: [
             "1, Cryptomonedas. 2.- Blockchain. 3, Programación y el código.",
             "1, Robotíca, IA, Autonomía. 2.- Nanotecnología en fusión con Biotecnología. 3, Programación y el código.",
-            "1, Economía digital. 2.- Ciencia de Cohetes. 3, Ciencias médicas y protesis robóticas."
+            "1, Economía digital. 2.- Ciencia de Cohetes. 3, Ciencias médicas y protesis robóticas.",
+            "1, Redes sociales. 2.- Diseño gráfico. 3, Marketing digital."
         ],
         answer: 1,
         points: 1
@@ -103,7 +113,8 @@ const questions = [
         options: [
             "Optimizador de tráfico de drones, Diseño de Viajes sin conductor, Gastrónomo Molecular.",
             "Creación de arte digital por IA, Gestión de contabilidad autonóma, Gestión de energía de paneles solares.",
-            "Ingeniero de electrónica analógica, Diseño de Interiores asistido por IA, Terapeutas de mascotas."
+            "Ingeniero de electrónica analógica, Diseño de Interiores asistido por IA, Terapeutas de mascotas.",
+            "Conductor de taxis, Cajero bancario, Operador de máquinas fotocopiadoras."
         ],
         answer: 0,
         points: 1
@@ -114,7 +125,8 @@ const questions = [
         options: [
             "Coca Cola, Wal Mart, FedEx.",
             "Amazon, AliExpress, Ebay.",
-            "Apple, Tesla, Pfizer."
+            "Apple, Tesla, Pfizer.",
+            "McDonald's, Nike, Starbucks."
         ],
         answer: 2,
         points: 1
@@ -125,7 +137,8 @@ const questions = [
         options: [
             "Así todas las empresas tecnológicas se ponen de acuerdo para que los productos se entiendan entre sí.",
             "Son reglas que ponen los gobiernos para que todas las empresas las sigan.",
-            "Son clave para que no existan disputas legales entre las empresas."
+            "Son clave para que no existan disputas legales entre las empresas.",
+            "Son normas de seguridad para proteger a los usuarios de productos defectuosos."
         ],
         answer: 0,
         points: 1
@@ -135,7 +148,9 @@ const questions = [
         question: "¿Conforme salen y se adoptan nuevas tecnologías sobre la tecnología actual, que pasa con los estándares tecnológicos que están vigentes?",
         options: [
             "Se adoptan, después todo producto nuevo trae los estándares nuevos, así se fabrican las cosas con lo más nuevo.",
-            "\"Suben\" ó cambian a una nueva versión ó generación."
+            "\"Suben\" ó cambian a una nueva versión ó generación.",
+            "Se eliminan completamente y se crean unos nuevos desde cero.",
+            "Permanecen exactamente iguales sin importar los cambios tecnológicos."
         ],
         answer: 1,
         points: 1
@@ -146,7 +161,8 @@ const questions = [
         options: [
             "Integrar desarrollo de habilidades sociales en las escuelas y del medio ambiente.",
             "Integrar Ciencia y Tecnología en la educación media y media superior para elevar el número estudiantes en áreas STEM.",
-            "Integrar clases de robótica y matemática pura para elevar el coheficiente IQ de los alumnos."
+            "Integrar clases de robótica y matemática pura para elevar el coheficiente IQ de los alumnos.",
+            "Construir más laboratorios de investigación sin cambiar la educación actual."
         ],
         answer: 1,
         points: 1
@@ -156,7 +172,9 @@ const questions = [
         question: "¿Qué ventaja tiene la educación STEM en modo divulgativo versus las clases de ciencias STEM regulares?",
         options: [
             "Sube la complejidad pero al final se lográ un mejor resultado teniendo alumnos más capaces de enfrentar al mundo.",
-            "La infomación es más fácil de entender y entretenida, además de ser temas selectos que causan mayor retención de la atención y el conocimiento."
+            "La infomación es más fácil de entender y entretenida, además de ser temas selectos que causan mayor retención de la atención y el conocimiento.",
+            "No tiene ninguna ventaja significativa sobre la educación tradicional.",
+            "Solo funciona para alumnos que ya tienen conocimientos avanzados de ciencia."
         ],
         answer: 1,
         points: 1
@@ -167,7 +185,8 @@ const questions = [
         options: [
             "Los principios y leyes son las que siempre se respetan en el mundo natural.",
             "Una hipótesis es la que siempre se respetan en el mundo natural.",
-            "Una teoría científica es la que siempre se respetan en el mundo natural."
+            "Una teoría científica es la que siempre se respetan en el mundo natural.",
+            "No hay diferencia, todos estos términos significan exactamente lo mismo."
         ],
         answer: 0,
         points: 1
@@ -178,7 +197,8 @@ const questions = [
         options: [
             "Es la teoría de la formación del inicio de la vida en la Tierra.",
             "Es la teoría de la formación del inicio de nuestro Sol.",
-            "Es la teoría de la formación del inicio de nuestro Universo."
+            "Es la teoría de la formación del inicio de nuestro Universo.",
+            "Es la teoría que explica por qué las galaxias giran en espiral."
         ],
         answer: 2,
         points: 1
@@ -189,7 +209,8 @@ const questions = [
         options: [
             "Esta desacelerando",
             "Esta acelerando",
-            "Esta inmóvil"
+            "Esta inmóvil",
+            "Se está contrayendo hacia su centro"
         ],
         answer: 1,
         points: 1
@@ -200,7 +221,8 @@ const questions = [
         options: [
              "Es matería oscura de la que está compuesta el 70% de la energía del Universo.",
              "Es materia que tiene su carga eléctrica opuesta, como el positrón",
-             "Se le llama así a la energía pura antes de convertirse en materia"
+             "Se le llama así a la energía pura antes de convertirse en materia",
+             "Es un tipo de material sintético creado en laboratorios para uso industrial."
         ],
         answer: 1,
         points: 1
@@ -209,9 +231,10 @@ const questions = [
         category: "Cosmología",
         question: "¿Qué es el CBR (Cosmic Background Radiation) ó Radiación de Fondo Cósmico?",
         options: [
-            "Es el \"ruido\" remanente del Big Bang, que podemos escuchar en la radio",
+            "Es el \"ruido\" remanente del Big Bang, que podemos detectar como microondas",
             "Es la tela del espacio-tiempo de fondo en las estrellas",
-            "Es la luz en su conjunto que irradian todas las estrellas juntas"
+            "Es la luz en su conjunto que irradian todas las estrellas juntas",
+            "Es una frecuencia de radio utilizada para comunicarse con satélites."
         ],
         answer: 0,
         points: 1
@@ -221,7 +244,9 @@ const questions = [
         question: "¿Qué es la fusión termonuclear?",
         options: [
             "Es presionar átomos con presión y calor hasta que se unen y forman uno nuevo",
-            "Es dividir átomos con presión y calor hasta que se sepan en dos átomos individuales"
+            "Es dividir átomos con presión y calor hasta que se sepan en dos átomos individuales",
+            "Es el proceso de enfriar átomos hasta que se separan en sus componentes básicos.",
+            "Es una reacción química común que ocurre en cualquier combustión."
         ],
         answer: 0,
         points: 1
@@ -231,7 +256,9 @@ const questions = [
         question: "¿Qué es la secuencia principal?",
         options: [
             "Es un proceso basado en el método científico que usan las empresas para crear nueva tecnología",
-            "Se les llama así aprox. al 80% de las estrellas en el Universo porque son de un tamaño y brillo similar."
+            "Se les llama así aprox. al 80% de las estrellas en el Universo porque son de un tamaño y brillo similar.",
+            "Es la forma en que se clasifican los planetas del Sistema Solar por su distancia al Sol.",
+            "Es el orden en que se descubrieron los elementos de la tabla periódica."
         ],
         answer: 1,
         points: 1
@@ -242,7 +269,8 @@ const questions = [
         options: [
             "Se llamaba así a los discos en que se guardaba la información digital en las empresas de desarrollo tecnológico.",
             "Es el aglutinamiento de material alrededor de una estrella derivado de estos discos se forman los planetas en un sistema planetario.",
-            "Es una tecnología novedosa de almacenamiento de datos, la siguiente generación después de los discos en estado sólido.."
+            "Es una tecnología novedosa de almacenamiento de datos, la siguiente generación después de los discos en estado sólido.",
+            "Es un instrumento óptico utilizado para observar estrellas desde la Tierra."
         ],
         answer: 1,
         points: 1
@@ -253,7 +281,8 @@ const questions = [
         options: [
             "Es entrar en una caída infinita como los satélites naturales y artificiales",
             "Es agitar en forma circular un objeto para obtener una mezcla uniforme",
-            "Es como se le llama al resultado de unir dos átomos mediante la fusión"
+            "Es como se le llama al resultado de unir dos átomos mediante la fusión",
+            "Es el movimiento que hace un electrón dentro del núcleo de un átomo."
         ],
         answer: 0,
         points: 1
@@ -263,7 +292,9 @@ const questions = [
         question: "¿Para qué nos sirve la Datación Radiométrica de Isótopos?",
         options: [
             "Sirve para identificar si hay contaminación por radiación en una muestra",
-            "Sirve para saber desde hace cuantos años existe una muestra"
+            "Sirve para saber desde hace cuantos años existe una muestra",
+            "Sirve para medir la temperatura interna de las rocas volcánicas.",
+            "Sirve para determinar la composición química del agua potable."
         ],
         answer: 1,
         points: 1
@@ -274,7 +305,8 @@ const questions = [
         options: [
             "Carbono",
             "Oxígeno",
-            "Nitrógeno"
+            "Nitrógeno",
+            "Hierro"
         ],
         answer: 0,
         points: 1
@@ -284,7 +316,9 @@ const questions = [
         question: "De los millones de compuestos orgánicos que existen ¿Cuáles son los cuatro tipos principales?",
         options: [
             "Carbohidratos, Lípidos (grasas), Proteínas, Acidos Núcleicos (ADN).",
-            "Alcoholes, Cetonas, Polímeros, Sintéticos"
+            "Alcoholes, Cetonas, Polímeros, Sintéticos",
+            "Glucosa, Minerales, Vitaminas, Enzimas",
+            "Metales, No metales, Gases nobles, Metaloides"
         ],
         answer: 0,
         points: 1
@@ -295,7 +329,8 @@ const questions = [
         options: [
             "Significa Acido Desoxirribonucleico y contiene las instrucciones ó código genético de toda la vida orgánica",
             "Significa Acido Dimetil-nitrogenado y contiene el código genetico humano y de los animales solamente.",
-            "Significa Adaptative Distance Nivelator, es un dispositivo que nivel la distancia entre dos objetos usando tecnología laser."
+            "Significa Adaptative Distance Nivelator, es un dispositivo que nivel la distancia entre dos objetos usando tecnología laser.",
+            "Significa Análisis de Datos Numéricos y es un método estadístico creado por Watson y Crick."
         ],
         answer: 0,
         points: 1
@@ -305,7 +340,9 @@ const questions = [
         question: "¿Qué es el invierno nuclear?",
         options: [
             "Es el levantamiento de una enorme nube de polvo que no permite la entrada de luz solar provocando la muerte de todas las plantas en la tierra provocada por la explosión de una bomba atomica ó el impacto de un asteoride.",
-            "Es un temporal que se da cada mil años al invertirse la polaridad del núcleo de la tierra."
+            "Es un temporal que se da cada mil años al invertirse la polaridad del núcleo de la tierra.",
+            "Es una estación especialmente fría que ocurre naturalmente cada 500 años.",
+            "Es el nombre que recibe el invierno en los países que tienen centrales nucleares cerca."
         ],
         answer: 0,
         points: 1
@@ -316,7 +353,8 @@ const questions = [
         options: [
             "Hace 3 mil millones de años.",
             "Hace casi 14 mil millones de años.",
-            "Hace casi 10 mil millones de años."
+            "Hace casi 10 mil millones de años.",
+            "Hace 20 mil millones de años."
         ],
         answer: 1,
         points: 1
@@ -327,7 +365,8 @@ const questions = [
         options: [
             "Hace 4,600 millones de años.",
             "Hace 6,000 millones de años.",
-            "Hace 10,000 millones de años."
+            "Hace 10,000 millones de años.",
+            "Hace 2,000 millones de años."
         ],
         answer: 0,
         points: 1
@@ -338,7 +377,8 @@ const questions = [
         options: [
             "Hace sólo un 2% de la historia del Universo.",
             "Hace sólo un 5% de la historia del Universo.",
-            "Hace sólo un 0.2% de la historia del Universo."
+            "Hace sólo un 0.2% de la historia del Universo.",
+            "Hace un 15% de la historia del Universo."
         ],
         answer: 2,
         points: 1
@@ -349,7 +389,8 @@ const questions = [
         options: [
             "Son réptiles, ancestros de las aves modernas que vivieron hace unos 65 millones de años.",
             "Es una tecnología que regula las redes inalambricas y su interacción con los humanos.",
-            "Son mamíferos a los que se les denomina los ancestros verdaderos que vivieron hace unos 65 millones de años."
+            "Son mamíferos a los que se les denomina los ancestros verdaderos que vivieron hace unos 65 millones de años.",
+            "Son fósiles de insectos gigantes encontrados en la era del Carbonífero."
         ],
         answer: 2,
         points: 1
@@ -360,7 +401,8 @@ const questions = [
         options: [
             "Es una teoría que describe como el espacio y el tiempo se curvan en presencia de gravedad.",
             "Es una teoría que describe como la gravedad se curva con la velocidad de un objeto.",
-            "Es una teoría que describe como el tiempo es relativo a la conciencia de las personas."
+            "Es una teoría que describe como el tiempo es relativo a la conciencia de las personas.",
+            "Es una teoría que explica por qué la velocidad de la luz cambia según el observador."
         ],
         answer: 0,
         points: 1
@@ -371,7 +413,8 @@ const questions = [
         options: [
             "Se refiere a la fuerza de atracción gravitatoria en la superficie del Sol.",
             "Se refiere a los servicios de telefonía inalámbrica de primer generación.",
-            "Se refiere a la fuerza de atracción gravitatoria en la superficie de la tierra."
+            "Se refiere a la fuerza de atracción gravitatoria en la superficie de la tierra.",
+            "Se refiere a la velocidad de un gigabyte por segundo en redes de datos."
         ],
         answer: 2,
         points: 1
@@ -382,7 +425,8 @@ const questions = [
         options: [
             "Escuchamos primero el ruido y luego vemos el rayo.",
             "Escuchamos y vemos al mismo tiempo.",
-            "Vemos primero la luz y luego escuchamos el rayo."
+            "Vemos primero la luz y luego escuchamos el rayo.",
+            "No podemos percibir ni la luz ni el sonido a distancia."
         ],
         answer: 2,
         points: 1
@@ -393,7 +437,8 @@ const questions = [
         options: [
             "No, porque no hay gravedad y no puede propagarse el sonido.",
             "No, en el espacio no hay sonido.",
-            "Sí, porque dentro hay una atmósfera artificial y ahí si hay sonido."
+            "Sí, porque dentro hay una atmósfera artificial y ahí si hay sonido.",
+            "Solo se puede escuchar si usan micrófonos especiales conectados a las paredes."
         ],
         answer: 2,
         points: 1
@@ -404,7 +449,8 @@ const questions = [
         options: [
             "Sucedió en el último minuto (60 segundos).",
             "Sucedió en los últimos dos segundos.",
-            "Sucedió en los últimos 10 segundos."
+            "Sucedió en los últimos 10 segundos.",
+            "Sucedió en las últimas 24 horas."
         ],
         answer: 1,
         points: 1
@@ -415,7 +461,8 @@ const questions = [
         options: [
             "Es un transporte espacial que trae de vuelta a los astronautas del espacio.",
             "Es un satélite que usa la empresa de Elon Musk SpaceX para ofrecer internet en todo el mundo.",
-            "Es una nave que se lanzó en la década de 70s hacia los confines del Universo."
+            "Es una nave que se lanzó en la década de 70s hacia los confines del Universo.",
+            "Es el nombre del primer robot que aterrizó en Marte en 2020."
         ],
         answer: 2,
         points: 1
@@ -426,7 +473,8 @@ const questions = [
         options: [
             "A la primer fotografía de Urano por su distintivo color azul.",
             "A la primer fotografía de la luna de Jupiter \"Europa\" por sus océanos bajo su superficie.",
-            "Al planeta tierra visto desde Neptuno cuando la nave Voyager volteó hacia atrás y capturó la fotografía."
+            "Al planeta tierra visto desde Neptuno cuando la nave Voyager volteó hacia atrás y capturó la fotografía.",
+            "Al primer exoplaneta descubierto con agua en su superficie."
         ],
         answer: 2,
         points: 1
@@ -437,7 +485,8 @@ const questions = [
         options: [
             "Sirius, 8 años luz.",
             "Vega, 3 años luz.",
-            "Alpha Centuri, 4 años luz."
+            "Alpha Centuri, 4 años luz.",
+            "Betelgeuse, 10 años luz."
         ],
         answer: 2,
         points: 1
@@ -448,7 +497,8 @@ const questions = [
         options: [
             "Andrómeda y colisionará con la vía lactea en 2.5 mil millones de años.",
             "Galaxia Triángulo y colisionará con la vía láctea en 500 millones de años.",
-            "Andrómeda y colisionará con la vía lactea en mil millones de años."
+            "Andrómeda y colisionará con la vía lactea en mil millones de años.",
+            "La Gran Nube de Magallanes y colisionará en 5 mil millones de años."
         ],
         answer: 0,
         points: 1
@@ -459,7 +509,8 @@ const questions = [
         options: [
             "99%",
             "95%",
-            "90%"
+            "90%",
+            "75%"
         ],
         answer: 0,
         points: 1
@@ -470,7 +521,8 @@ const questions = [
         options: [
             "-270 grados celcius.",
             "24 grados celcius.",
-            "0 grados celcius."
+            "0 grados celcius.",
+            "-50 grados celcius."
         ],
         answer: 0,
         points: 1
@@ -481,7 +533,8 @@ const questions = [
         options: [
             "Se usan pulsaciones de luz láser.",
             "Se usan las \"Velas Estándar\" que son explosiones de Supernova que siempre brillan igual como referencia.",
-            "Se usan radiotelescopios que miden el brillo y miden la distancia usando la intensidad del mismo."
+            "Se usan radiotelescopios que miden el brillo y miden la distancia usando la intensidad del mismo.",
+            "Se miden el tamaño aparente de las galaxias con telescopios ópticos convencionales."
         ],
         answer: 1,
         points: 1
@@ -492,7 +545,8 @@ const questions = [
         options: [
             "Issac Newton",
             "Albert Einstein",
-            "Max Planck"
+            "Max Planck",
+            "Galileo Galilei"
         ],
         answer: 0,
         points: 1
@@ -503,7 +557,8 @@ const questions = [
         options: [
             "10.12 m/s2",
             "6.7 m/s2",
-            "9.8 m/s2"
+            "9.8 m/s2",
+            "15.3 m/s2"
         ],
         answer: 2,
         points: 1
@@ -514,7 +569,8 @@ const questions = [
         options: [
             "El tiempo es más lento para el observador y más rápido para el viajero.",
             "Los tiempos son los mismos ya que al desacelerar se revierte la dilatación del tiempo provocada por la aceleración de la velocidad.",
-            "El tiempo es más lento para el viajero y más rápido para el observador."
+            "El tiempo es más lento para el viajero y más rápido para el observador.",
+            "El tiempo se detiene por completo tanto para el viajero como para el observador."
         ],
         answer: 2,
         points: 1
@@ -524,7 +580,9 @@ const questions = [
         question: "¿Cómo sería un cuerpo humano si la gravedad en la Tierra fuera el doble ó más?",
         options: [
             "Resultaría en una estatura más baja y cuerpos más robustos.",
-            "Resultaría en una estatura más alta y cuerpos menos robustos."
+            "Resultaría en una estatura más alta y cuerpos menos robustos.",
+            "No habría ningún cambio porque el cuerpo se adaptaría rápidamente.",
+            "Sería imposible que existiera vida humana bajo esa gravedad."
         ],
         answer: 0,
         points: 1
@@ -535,7 +593,8 @@ const questions = [
         options: [
             "100 kilómetros",
             "80 kilómetros",
-            "90 kilómetros"
+            "90 kilómetros",
+            "50 kilómetros"
         ],
         answer: 0,
         points: 1
@@ -545,7 +604,9 @@ const questions = [
         question: "¿Que enunciado describe mejor a un objeto que esta \"en orbita\"?",
         options: [
             "Término utilizado para aumentar la velocidad de un objeto mediante la gravedad.",
-            "Es cuando a un objeto tiene cierta velocidad que le permite girar indefinidamente en una caída infinita."
+            "Es cuando a un objeto tiene cierta velocidad que le permite girar indefinidamente en una caída infinita.",
+            "Es cuando un objeto flota en el espacio sin moverse porque no hay gravedad.",
+            "Se refiere a cualquier objeto que se encuentra fuera de la atmósfera terrestre."
         ],
         answer: 1,
         points: 1
@@ -555,7 +616,9 @@ const questions = [
         question: "Si los planetas del Sistema Solar no estuvieran girando alrededor del Sol a su velocidad determinada. ¿Caerían directamente hacia el Sol?",
         options: [
             "Sí, serían atraidos directamente.",
-            "No, porque cada planeta tiene su masa, su propia gravedad y se mantendrían en equilibrio donde mismo."
+            "No, porque cada planeta tiene su masa, su propia gravedad y se mantendrían en equilibrio donde mismo.",
+            "No, porque el viento solar los empujaría hacia afuera.",
+            "No, porque la fuerza magnética del Sol los mantendría a distancia fija."
         ],
         answer: 0,
         points: 1
@@ -566,7 +629,8 @@ const questions = [
         options: [
             "Con la observación directa gracias al telescopio James Webb.",
             "Usamos el telescopio espacial de rayos X, Chandra.",
-            "Usamos la técnica de espectroscopia que descompone la luz."
+            "Usamos la técnica de espectroscopia que descompone la luz.",
+            "Enviamos sondas espaciales a cada exoplaneta para tomar muestras."
         ],
         answer: 2,
         points: 1
@@ -577,7 +641,8 @@ const questions = [
         options: [
             "Oxígeno",
             "Nitrógeno",
-            "Carbono"
+            "Carbono",
+            "Hidrógeno"
         ],
         answer: 1,
         points: 1
@@ -587,7 +652,9 @@ const questions = [
         question: "¿Que pasa con la atmósfera a mayor altitud?",
         options: [
             "Se hace mas densa por esto los aviones vueltan alto.",
-            "Se hace menos densa."
+            "Se hace menos densa.",
+            "La densidad permanece constante sin importar la altitud.",
+            "Se vuelve más caliente a mayor altitud porque está más cerca del Sol."
         ],
         answer: 1,
         points: 1
@@ -610,7 +677,8 @@ const questions = [
         options: [
             "Temperatura y altitud.",
             "Calor y aceleración.",
-            "El agua de los mares y la posición de la luna."
+            "El agua de los mares y la posición de la luna.",
+            "La velocidad de rotación de la Tierra y la cantidad de oxígeno."
         ],
         answer: 0,
         points: 1
@@ -621,7 +689,8 @@ const questions = [
         options: [
             "En el interior de estrellas como el Sol.",
             "A altas temperaturas en las capas internas de la Tierra.",
-            "En el Big Bang y fueron esparcidos por la misma explosión."
+            "En el Big Bang y fueron esparcidos por la misma explosión.",
+            "En los cometas que viajan entre las galaxias trayendo materiales."
         ],
         answer: 0,
         points: 1
@@ -631,7 +700,9 @@ const questions = [
         question: "¿Qué es la fusión nuclear?",
         options: [
             "Es el proceso de unión de dos atomos para formar uno nuevo más grande.",
-            "Es el proceso de separación de dos atomos para formar uno nuevo más pequeño."
+            "Es el proceso de separación de dos atomos para formar uno nuevo más pequeño.",
+            "Es el proceso de calentar materiales hasta que se convierten en plasma.",
+            "Es el proceso de acelerar partículas en un acelerador como el CERN."
         ],
         answer: 0,
         points: 1
@@ -641,7 +712,9 @@ const questions = [
         question: "¿Qué es la fisión nuclear?",
         options: [
             "Es el proceso de unión de dos atomos para formar uno nuevo más grande.",
-            "Es el proceso de separación de dos atomos para formar uno nuevo más pequeño."
+            "Es el proceso de separación de un atomo pesado para obtener átomos más pequeños.",
+            "Es el proceso de convertir energía solar en electricidad.",
+            "Es el proceso de crear elementos nuevos combinando protones y neutrones."
         ],
         answer: 1,
         points: 1
@@ -651,7 +724,9 @@ const questions = [
         question: "En la actualidad, ¿Bajo que proceso funcionan todas las plantas nucleares de generación de energía eléctrica?",
         options: [
             "Fusión nuclear.",
-            "Fisión nuclear."
+            "Fisión nuclear.",
+            "Combustión de uranio enriquecido.",
+            "Reacciones químicas de plutonio con agua pesada."
         ],
         answer: 1,
         points: 1
@@ -661,7 +736,9 @@ const questions = [
         question: "¿Qué proceso nuclear produce más energía?",
         options: [
             "Fusión nuclear.",
-            "Fisión nuclear."
+            "Fisión nuclear.",
+            "Ambos producen exactamente la misma cantidad de energía.",
+            "Depende del tamaño del reactor, no del proceso."
         ],
         answer: 0,
         points: 1
@@ -684,7 +761,8 @@ const questions = [
         options: [
             "Se refiere a estrellas que convierten Higrógeno en Helio.",
             "Se refiere a estrellas que convierten Helio en Oxígeno.",
-            "Se refiere a estrellas que convierten Higrógeno en Carbono."
+            "Se refiere a estrellas que convierten Higrógeno en Carbono.",
+            "Se refiere a estrellas que ya agotaron su combustible nuclear."
         ],
         answer: 0,
         points: 1
@@ -694,7 +772,9 @@ const questions = [
         question: "¿Qué se necesita para que una estrella pueda formar elementos más pesados como Carbono, Nitrógeno y Oxígeno?",
         options: [
             "Que sea más grande que el Sol y que tenga hierro en su interior.",
-            "Que sea más grande que el Sol y con una mayor temperatura."
+            "Que sea más grande que el Sol y con una mayor temperatura.",
+            "Que esté en una galaxia con muchas otras estrellas cercanas.",
+            "Que haya completado al menos un ciclo completo de rotación galáctica."
         ],
         answer: 1,
         points: 1
@@ -704,7 +784,9 @@ const questions = [
         question: "¿Cada cuanto se estima que ocurren Supernovas en nuestra Galaxia?",
         options: [
             "Se estiman dos ó tres cada siglo.",
-            "Se estima una cada siglo."
+            "Se estima una cada siglo.",
+            "Se estima una cada mil años.",
+            "Se estima una cada diez años."
         ],
         answer: 0,
         points: 1
@@ -713,8 +795,10 @@ const questions = [
         category: "Astronomía",
         question: "¿Cómo se forma una estrella de neutrones?",
         options: [
-            "Es el remanente (núcleo) de una estrella que tenía menos a 10 masas solares.",
-            "Es el remanente de cuando en un sistema binario dos estrellas chocan entre sí formando una Supernova."
+            "Es el remanente (núcleo) de una estrella masiva que colapsó tras una supernova.",
+            "Es el remanente de cuando en un sistema binario dos estrellas chocan entre sí formando una Supernova.",
+            "Se forma cuando una nube de gas interestelar se enfría hasta casi el cero absoluto.",
+            "Se forma por la acumulación de polvo cósmico durante miles de millones de años."
         ],
         answer: 0,
         points: 1
@@ -737,7 +821,8 @@ const questions = [
         options: [
             "Describe el funcionamiento de las fuerzas fundamentales.",
             "Describe el funcionamiento de la gravedad.",
-            "Describe el funcionamiento de las partículas al interior de los atomos."
+            "Describe el funcionamiento de las partículas al interior de los atomos.",
+            "Describe cómo se forman los compuestos químicos orgánicos."
         ],
         answer: 2,
         points: 1
@@ -748,7 +833,8 @@ const questions = [
         options: [
             "Son lugares donde se investigan sobre la fusión nuclear para generar electricidad.",
             "Son lugares donde se colisionan partículas para descubrir los secretos del Universo.",
-            "Son lugares donde se colisionan partículas para generar micro agujeros negros e investigarlos."
+            "Son lugares donde se colisionan partículas para generar micro agujeros negros e investigarlos.",
+            "Son universidades europeas especializadas en astrofísica teórica."
         ],
         answer: 1,
         points: 1
@@ -758,17 +844,21 @@ const questions = [
         question: "¿Qué pretende ser la Theory of Everything (ToE) ó Teoría del Todo?",
         options: [
             "Una teoría que fusione matemáticamente la energía y materia oscuras (incluyendo la gravedad) y puedan tener sentido juntas.",
-            "Una teoría que explique de donde venimos y hacia donde vamos en términos de expansionismo del Universo."
+            "Una teoría que explique de donde venimos y hacia donde vamos en términos de expansionismo del Universo.",
+            "Una teoría que unifique todas las religiones del mundo bajo un marco científico.",
+            "Una teoría para predecir el comportamiento de todos los seres vivos en el planeta."
         ],
         answer: 0,
         points: 1
     },
     {
         category: "Física",
-        question: "¿Qué pretende ser la Theory of Everything (ToE) ó Teoría del Todo?",
+        question: "¿Qué busca unificar la Theory of Everything (ToE)?",
         options: [
-            "Una teoría que fusione la relatividad con la energía y materia oscuras y las fuerzas fundamentales (incluyendo la gravedad) y puedan tener sentido juntas.",
-            "Una teoría que explique matemáticamente de donde venimos y hacia donde vamos en términos de posicionismo del Universo."
+            "La relatividad general con la mecánica cuántica, incluyendo las fuerzas fundamentales y la gravedad.",
+            "La termodinámica con la mecánica clásica para explicar el movimiento de los planetas.",
+            "La química orgánica con la biología molecular para entender el origen de la vida.",
+            "La astrofísica con la geología para entender la formación de los planetas rocosos."
         ],
         answer: 0,
         points: 1
@@ -779,7 +869,8 @@ const questions = [
         options: [
             "Litio",
             "Hidrógeno",
-            "Carbono"
+            "Carbono",
+            "Helio"
         ],
         answer: 2,
         points: 1
@@ -790,7 +881,8 @@ const questions = [
         options: [
             "Hidrógeno",
             "Carbono",
-            "Oxígeno"
+            "Oxígeno",
+            "Helio"
         ],
         answer: 0,
         points: 1
@@ -801,7 +893,8 @@ const questions = [
         options: [
             "Agua",
             "Silicio",
-            "Oxígeno"
+            "Oxígeno",
+            "Calcio"
         ],
         answer: 1,
         points: 1
@@ -812,7 +905,8 @@ const questions = [
         options: [
             "Son mensajeras, después de ser secretadas viajan por todo el torrente sanguíneo llevando instrucciones de activación/desactivación de funciones muy variadas.",
             "Son excretadas al exterior para atraer al sexo opuesto.",
-            "Son medicamentos utilizados para regular los niveles de ciertos componentes sanguíneos."
+            "Son medicamentos utilizados para regular los niveles de ciertos componentes sanguíneos.",
+            "Son células especializadas que forman parte del sistema óseo."
         ],
         answer: 0,
         points: 1
@@ -823,7 +917,8 @@ const questions = [
         options: [
             "Oxígeno",
             "Carbono",
-            "Agua"
+            "Agua",
+            "Calcio"
         ],
         answer: 0,
         points: 1
@@ -833,8 +928,9 @@ const questions = [
         question: "A nivel de estructura atómica, ¿Cuál es la principal diferencia entre un elemento y otro?.",
         options: [
             "La temperatura donde fue creado.",
-            "Carbono",
-            "El número ó cantidad de protones, neutrones y electrones."
+            "El color y la forma de sus moléculas.",
+            "El número ó cantidad de protones, neutrones y electrones.",
+            "La velocidad a la que se mueven sus átomos."
         ],
         answer: 2,
         points: 1
@@ -844,7 +940,9 @@ const questions = [
         question: "¿Qué parte del atomo concentra más del 99% de su masa?",
         options: [
             "En los electrones que orbitan por su energía cinética.",
-            "El núcleo del mismo donde están los protones y neutrones."
+            "El núcleo del mismo donde están los protones y neutrones.",
+            "En la nube de electrones que rodea al átomo.",
+            "En los quarks que componen las partículas subatómicas externas."
         ],
         answer: 1,
         points: 1
@@ -855,7 +953,8 @@ const questions = [
         options: [
             "Gigabytes",
             "Generación",
-            "Global"
+            "Global",
+            "Giga-hertz"
         ],
         answer: 1,
         points: 1
@@ -866,7 +965,8 @@ const questions = [
         options: [
             "Para pagar impuestos automáticamente.",
             "Es un código de respuesta rápida para acceder a información.",
-            "Es un tipo de batería nueva."
+            "Es un tipo de batería nueva.",
+            "Es una llave digital para desbloquear aplicaciones de pago."
         ],
         answer: 1,
         points: 1
@@ -877,7 +977,8 @@ const questions = [
         options: [
             "GPS",
             "Bluetooth",
-            "Wi-Fi"
+            "Wi-Fi",
+            "NFC"
         ],
         answer: 0,
         points: 1
@@ -888,7 +989,8 @@ const questions = [
         options: [
             "El Monitor",
             "El Teclado",
-            "El Procesador (CPU)"
+            "El Procesador (CPU)",
+            "El Disco Duro"
         ],
         answer: 2,
         points: 1
@@ -899,7 +1001,8 @@ const questions = [
         options: [
             "Que puede conectarse a internet sin cables.",
             "Que tiene mucha batería.",
-            "Que puede tomar fotos bajo el agua."
+            "Que puede tomar fotos bajo el agua.",
+            "Que tiene una pantalla de alta resolución."
         ],
         answer: 0,
         points: 1
@@ -910,7 +1013,8 @@ const questions = [
         options: [
             "Un error que borra todo.",
             "Una instrucción que se repite varias veces.",
-            "Un cable que conecta el mouse."
+            "Un cable que conecta el mouse.",
+            "Un programa que se ejecuta una sola vez y se cierra."
         ],
         answer: 1,
         points: 1
@@ -921,7 +1025,8 @@ const questions = [
         options: [
             "Un nombre que guarda un valor (como un número o texto).",
             "Un tipo de pantalla flexible.",
-            "El botón de encendido."
+            "El botón de encendido.",
+            "Una función que solo se ejecuta cuando hay errores."
         ],
         answer: 0,
         points: 1
@@ -932,7 +1037,8 @@ const questions = [
         options: [
             "Bluetooth",
             "Radio FM",
-            "Infrarrojo"
+            "Infrarrojo",
+            "Satélite GPS"
         ],
         answer: 0,
         points: 1
@@ -943,7 +1049,8 @@ const questions = [
         options: [
             "Pantalla Táctil",
             "Scanner",
-            "Impresora"
+            "Impresora",
+            "Trackpad Externo"
         ],
         answer: 0,
         points: 1
@@ -954,7 +1061,8 @@ const questions = [
         options: [
             "Java",
             "Python",
-            "C++"
+            "C++",
+            "Ruby"
         ],
         answer: 1,
         points: 1
@@ -965,7 +1073,8 @@ const questions = [
         options: [
             "Glue",
             "Bug",
-            "Stone"
+            "Stone",
+            "Crack"
         ],
         answer: 1,
         points: 1
@@ -976,7 +1085,8 @@ const questions = [
         options: [
             "Router",
             "Monitor",
-            "Caja de luz"
+            "Caja de luz",
+            "Transformador eléctrico"
         ],
         answer: 0,
         points: 1
@@ -987,7 +1097,8 @@ const questions = [
         options: [
             "Una marca de computadoras.",
             "Un lenguaje de programación por bloques para aprender jugando.",
-            "Un programa para limpiar el teclado."
+            "Un programa para limpiar el teclado.",
+            "Una aplicación de mensajería instantánea para programadores."
         ],
         answer: 1,
         points: 1
@@ -998,7 +1109,8 @@ const questions = [
         options: [
             "A que están guardadas en servidores en internet.",
             "A que se suben al cielo físicamente.",
-            "A que están impresas en papel especial."
+            "A que están impresas en papel especial.",
+            "A que se guardan temporalmente en la memoria RAM del teléfono."
         ],
         answer: 0,
         points: 1
@@ -1009,7 +1121,8 @@ const questions = [
         options: [
             "Arregla cables de internet.",
             "Analiza mucha información para encontrar patrones y soluciones.",
-            "Dibuja los logos de las empresas."
+            "Dibuja los logos de las empresas.",
+            "Diseña los circuitos de las computadoras."
         ],
         answer: 1,
         points: 1
@@ -1020,7 +1133,8 @@ const questions = [
         options: [
             "Es una abreviatura de Aplicación (un programa para celular o PC).",
             "Un tipo de comida para astronautas.",
-            "Un botón secreto del teclado."
+            "Un botón secreto del teclado.",
+            "Una unidad de medida de velocidad de internet."
         ],
         answer: 0,
         points: 1
@@ -1031,7 +1145,8 @@ const questions = [
         options: [
             "United States Battery",
             "Universal Serial Bus (un estándar para conectar dispositivos).",
-            "Ultra Speed Box"
+            "Ultra Speed Box",
+            "Universal System Backup"
         ],
         answer: 1,
         points: 1
@@ -1042,7 +1157,8 @@ const questions = [
         options: [
             "Realidad Virtual (VR)",
             "Cine 4D",
-            "Televisión LED"
+            "Televisión LED",
+            "Holografía clásica"
         ],
         answer: 0,
         points: 1
@@ -1053,7 +1169,8 @@ const questions = [
         options: [
             "Una medicina para la vista.",
             "Una serie de pasos para completar una tarea o resolver un problema.",
-            "Un tipo de música electrónica."
+            "Un tipo de música electrónica.",
+            "Un componente físico dentro de las computadoras."
         ],
         answer: 1,
         points: 1
@@ -1064,7 +1181,8 @@ const questions = [
         options: [
             "Estar fuera de línea.",
             "Estar conectado a la red.",
-            "Estar en una fila esperando."
+            "Estar en una fila esperando.",
+            "Estar descargando una actualización."
         ],
         answer: 1,
         points: 1
@@ -1075,7 +1193,8 @@ const questions = [
         options: [
             "Un robot que limpia la casa.",
             "La capacidad de las máquinas para aprender y realizar tareas humanas.",
-            "Un juego de video antiguo."
+            "Un juego de video antiguo.",
+            "Un tipo de chip de computadora que solo procesa gráficos."
         ],
         answer: 1,
         points: 1

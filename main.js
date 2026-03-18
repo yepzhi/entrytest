@@ -261,6 +261,14 @@ function switchScreen(screenKey) {
     Object.values(screens).forEach(screen => screen.classList.remove('active'));
     screens[screenKey].classList.add('active');
     window.scrollTo(0, 0);
+
+    // PISA: Hide language selector during the quiz and results
+    const langToggle = document.getElementById('languageToggle');
+    if (screenKey === 'quiz' || screenKey === 'results') {
+        langToggle.style.display = 'none';
+    } else {
+        langToggle.style.display = 'flex';
+    }
 }
 
 function loadQuestion() {
@@ -305,13 +313,14 @@ function loadQuestion() {
     elements.progressBar.style.width = `${progress}%`;
     
     elements.optionsContainer.innerHTML = '';
+    const labels = ['A', 'B', 'C', 'D'];
     question.options.forEach((opt, idx) => {
         const optionEl = document.createElement('div');
         optionEl.className = 'option';
         if (state.answers[state.currentQuestionIndex] === idx) optionEl.classList.add('selected');
         
         optionEl.innerHTML = `
-            <div class="option-dot"></div>
+            <div class="option-dot">${labels[idx]}</div>
             <span class="option-text">${opt}</span>
         `;
         
