@@ -393,15 +393,67 @@ function finishQuiz() {
     const results = calculateResults();
     saveResultsToFirebase(results);
     
-    // Show Folio and Confirmation in Results
+    // Generate Downloadable Ticket UI
     elements.categoryResults.innerHTML += `
-        <div class="glass-card" style="margin-top: 30px; padding: 20px;">
-            <p style="color: var(--primary); font-weight: 800; font-size: 1.2rem;">${translations[state.language].folio_label} ${state.folio}</p>
-            <p style="font-size: 0.8rem; opacity: 0.8;">${translations[state.language].folio_generated}</p>
-            <p style="margin-top: 10px; color: var(--secondary); font-weight: 600;">${translations[state.language].email_confirmation}</p>
+        <div id="ticketContainer" style="margin-top: 30px; padding: 20px; text-align: center; background: rgba(0,0,0,0.8); border: 2px solid var(--primary); border-radius: 12px; position:relative; overflow:hidden;">
+            <div style="position:absolute; top:-50px; left:-50px; width:100px; height:100px; background:var(--primary); opacity:0.2; border-radius:50%; filter:blur(20px);"></div>
+            <div style="position:absolute; bottom:-50px; right:-50px; width:100px; height:100px; background:var(--secondary); opacity:0.2; border-radius:50%; filter:blur(20px);"></div>
+            
+            <h2 style="color: var(--primary); margin-bottom: 5px; font-weight: 900; position:relative; z-index:2;">SIIP NextGEN</h2>
+            <p style="font-size: 1.1rem; color: #fff; margin-bottom: 15px; font-weight: bold; position:relative; z-index:2;">STEM Test Oficial</p>
+            
+            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.1); position:relative; z-index:2;">
+                <p style="color: var(--primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Resultado Final</p>
+                <p style="font-size: 2.5rem; font-weight: 800; color: #fff; margin: 5px 0;">${results.totalScore} <span style="font-size: 1.2rem; opacity: 0.7;">/ ${state.shuffledQuestions.length}</span></p>
+            </div>
+
+            <p style="color: var(--primary); font-weight: 800; font-size: 1.4rem; letter-spacing: 2px; position:relative; z-index:2;">${translations[state.language].folio_label} <span style="color:#fff;">${state.folio}</span></p>
+            
+            <div style="background: #fff; display: inline-block; padding: 10px; border-radius: 10px; margin-top: 15px; position:relative; z-index:2;">
+                <canvas id="qrCodeCanvas"></canvas>
+            </div>
+            
+            <p style="font-size: 0.75rem; color: #aaa; margin-top: 15px; position:relative; z-index:2;">Escanea para validar en: <br> <strong style="color:var(--primary);">yepzhi.com/entrytest/</strong></p>
         </div>
+        
+        <button id="downloadTicketBtn" class="btn btn-primary" style="margin-top: 20px; width: 100%; font-size: 1.1rem; padding: 15px;">
+            📥 Descargar Mi Folio (Imagen)
+        </button>
     `;
     
+    setTimeout(() => {
+        const qrCanvas = document.getElementById('qrCodeCanvas');
+        if (qrCanvas && window.QRious) {
+            new QRious({
+                element: qrCanvas,
+                value: 'https://yepzhi.com/entrytest/?folio=' + state.folio,
+                size: 160,
+                background: 'white',
+                foreground: 'black'
+            });
+        }
+        
+        const downloadBtn = document.getElementById('downloadTicketBtn');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', () => {
+                const ticket = document.getElementById('ticketContainer');
+                if (window.html2canvas) {
+                    const originalBorder = ticket.style.border;
+                    ticket.style.border = 'none'; // Avoid thick borders rendering weird
+                    html2canvas(ticket, { backgroundColor: '#111827', scale: 2 }).then(canvas => {
+                        ticket.style.border = originalBorder;
+                        const link = document.createElement('a');
+                        link.download = `STEM_Folio_${state.folio}.png`;
+                        link.href = canvas.toDataURL('image/png');
+                        link.click();
+                    });
+                } else {
+                    alert("Error: Biblioteca de exportación no cargada. Intenta nuevamente.");
+                }
+            });
+        }
+    }, 500);
+
     switchScreen('results');
 }
 
@@ -419,6 +471,10 @@ function calculateResults() {
     });
     
     animateValue(elements.finalScore, 0, totalScore, 1000);
+    const scoreTotalElement = document.querySelector('.score-total');
+    if (scoreTotalElement) {
+        scoreTotalElement.textContent = `/ ${state.shuffledQuestions.length}`;
+    }
     
     elements.categoryResults.innerHTML = '';
     const finalCatScores = {};
@@ -426,23 +482,6 @@ function calculateResults() {
     Object.entries(catStats).forEach(([cat, data]) => {
         const catPercentage = (data.correct / data.total) * 100;
         finalCatScores[cat] = Math.round(catPercentage);
-
-        const catRow = document.createElement('div');
-        catRow.className = 'cat-row';
-        catRow.innerHTML = `
-            <div class="cat-label">
-                <span>${cat}</span>
-                <span>${Math.round(catPercentage)}%</span>
-            </div>
-            <div class="cat-bar-bg">
-                <div class="cat-bar-fill" style="width: 0%; transition: width 1s ease 0.5s"></div>
-            </div>
-        `;
-        elements.categoryResults.appendChild(catRow);
-        setTimeout(() => {
-            const bar = catRow.querySelector('.cat-bar-fill');
-            if (bar) bar.style.width = `${catPercentage}%`;
-        }, 100);
     });
 
     return { totalScore, finalCatScores };
