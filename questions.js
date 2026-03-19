@@ -16,7 +16,7 @@ const questions = [
             "D) Hierro."
         ],
         answer: 2,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -28,7 +28,7 @@ const questions = [
             "D) La formación de la Tierra."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -40,7 +40,7 @@ const questions = [
             "D) Una partícula de luz visible."
         ],
         answer: 2,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -52,7 +52,7 @@ const questions = [
             "D) Visible, invisible y transparente."
         ],
         answer: 0,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -64,7 +64,7 @@ const questions = [
             "D) La presión atmosférica."
         ],
         answer: 2,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -76,7 +76,7 @@ const questions = [
             "D) 24 horas."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -88,7 +88,7 @@ const questions = [
             "D) Un mineral que se encuentra en las rocas."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -100,7 +100,7 @@ const questions = [
             "D) El calor proveniente del centro de la galaxia."
         ],
         answer: 2,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -112,7 +112,7 @@ const questions = [
             "D) Es una fórmula para calcular la edad de las estrellas."
         ],
         answer: 0,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -124,7 +124,7 @@ const questions = [
             "D) El movimiento del agua desde los ríos al mar."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -136,7 +136,7 @@ const questions = [
             "D) Ondas sísmicas."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Ciencia General",
@@ -148,7 +148,7 @@ const questions = [
             "D) Que ha evolucionado en una nueva especie."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
 
     // --- BLOQUE 2: Alfabetización Tecnológica (Q13–Q26) ---
@@ -162,7 +162,7 @@ const questions = [
             "D) Un programa de computadora para navegar internet."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -174,7 +174,7 @@ const questions = [
             "D) La batería que suministra energía."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -186,7 +186,7 @@ const questions = [
             "D) Una aplicación para mejorar la velocidad de internet."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -198,7 +198,7 @@ const questions = [
             "D) Es un antivirus que protege la computadora."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -210,7 +210,7 @@ const questions = [
             "D) Las páginas web son más rápidas que las apps siempre."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -222,7 +222,7 @@ const questions = [
             "D) Un lenguaje de programación para robots."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -234,7 +234,7 @@ const questions = [
             "D) El tamaño en pulgadas de la pantalla."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -246,7 +246,7 @@ const questions = [
             "D) Que tiene 48 lentes en la cámara."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -258,7 +258,7 @@ const questions = [
             "D) El espacio vacío dentro de tu teléfono."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -270,7 +270,7 @@ const questions = [
             "D) Un celular con 5 cámaras."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -282,7 +282,7 @@ const questions = [
             "D) Celdas solares internas."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Tecnología Básica",
@@ -294,7 +294,7 @@ const questions = [
             "D) SSD solo funciona en computadoras de escritorio."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
 
     // --- BLOQUE 3: Pensamiento Lógico y Método Científico (Q27–Q36) ---
@@ -308,7 +308,7 @@ const questions = [
             "D) Suponer que con luz crece más sin necesidad de comprobarlo."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -320,7 +320,7 @@ const questions = [
             "D) Un resultado final ya comprobado."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -332,7 +332,7 @@ const questions = [
             "D) El experimento está mal diseñado por repetitivo."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -344,7 +344,7 @@ const questions = [
             "D) Depende del color del recipiente."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -356,7 +356,7 @@ const questions = [
             "D) Porque nuestros ojos están programados para ver solo azul."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -368,7 +368,7 @@ const questions = [
             "D) Imaginar, creer, suponer y aceptar."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -380,7 +380,7 @@ const questions = [
             "D) La conclusión final del experimento."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -392,7 +392,7 @@ const questions = [
             "D) Nada especial, es una temperatura más."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -404,7 +404,7 @@ const questions = [
             "D) $1,500."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Pensamiento Lógico",
@@ -416,7 +416,7 @@ const questions = [
             "D) La correlación es más importante que la causa en ciencia."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
 
     // --- BLOQUE 4: Familiaridad Digital y Programación (Q37–Q50) ---
@@ -430,7 +430,7 @@ const questions = [
             "D) Un cable especial para conectar computadoras."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -442,7 +442,7 @@ const questions = [
             "D) Un tipo de procesador muy potente."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -454,7 +454,7 @@ const questions = [
             "D) El manual de usuario de un teléfono celular."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -466,7 +466,7 @@ const questions = [
             "D) Para programar robots industriales."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -478,7 +478,7 @@ const questions = [
             "D) El nombre de un lenguaje de programación."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -490,7 +490,7 @@ const questions = [
             "D) La pantalla táctil de un teléfono."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -502,7 +502,7 @@ const questions = [
             "D) Un teléfono celular de última generación."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -514,7 +514,7 @@ const questions = [
             "D) Internet es solo para computadoras; la web es solo para celulares."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -526,7 +526,7 @@ const questions = [
             "D) El procesador de un teléfono inteligente."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -538,7 +538,7 @@ const questions = [
             "D) Publicarla en redes sociales para pedir consejo."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -550,7 +550,7 @@ const questions = [
             "D) Que el software es exclusivo para programadores profesionales."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "Cultura Digital",
@@ -562,7 +562,7 @@ const questions = [
             "D) El nombre de un servidor de videojuegos."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
 
     // --- BLOQUE 5: STEM Aplicado y Conciencia Global (Q47–Q50) ---
@@ -576,7 +576,7 @@ const questions = [
             "D) Software, Telecomunicaciones, Electricidad y Mecánica."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "STEM y Sociedad",
@@ -588,7 +588,7 @@ const questions = [
             "D) Porque reemplazará completamente a los seres humanos."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "STEM y Sociedad",
@@ -600,7 +600,7 @@ const questions = [
             "D) Cualquier tipo de electricidad generada en una planta nuclear."
         ],
         answer: 1,
-        points: 1
+        points: 2
     },
     {
         category: "STEM y Sociedad",
@@ -612,7 +612,7 @@ const questions = [
             "D) Google."
         ],
         answer: 1,
-        points: 1
+        points: 2
     }
 ];
 
