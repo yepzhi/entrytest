@@ -1,4 +1,4 @@
-import questions from './questions.js?v=2';
+import questions from './questions.js?v=3';
 import translations from './translations.js';
 
 // --- Firebase Configuration ---
@@ -107,8 +107,8 @@ const elements = {
 
 // Initialization
 function init() {
-    state.answers = new Array(questions.length).fill(null);
-    elements.totalQuestionsNum.textContent = questions.length;
+    state.answers = new Array(50).fill(null);
+    elements.totalQuestionsNum.textContent = 50;
     
     elements.startBtn.addEventListener('click', goToSurvey);
     elements.beginTestBtn.addEventListener('click', showInstructionsScreen);
@@ -233,7 +233,7 @@ function showInstructionsScreen() {
 
     if (!state.folio) {
         state.folio = generateFolio();
-        state.shuffledQuestions = shuffleArray([...questions]);
+        state.shuffledQuestions = shuffleArray([...questions]).slice(0, 50);
     }
 
     elements.folioDisplayNumber.textContent = 'FOLIO: ' + state.folio;
@@ -540,7 +540,7 @@ async function resumeQuizWithFolio(folioId) {
             state.userEmail = data.email;
             state.surveyData = data.survey;
             state.currentQuestionIndex = data.currentQuestionIndex || 0;
-            state.answers = data.answers || new Array(questions.length).fill(null);
+            state.answers = data.answers || new Array(50).fill(null);
             state.secondsElapsed = data.secondsElapsed || 0;
             
             // Reconstruct shuffled questions
@@ -582,7 +582,7 @@ function animateValue(obj, start, end, duration) {
 
 function resetQuiz() {
     state.currentQuestionIndex = 0;
-    state.answers = new Array(questions.length).fill(null);
+    state.answers = new Array(50).fill(null);
     state.shuffledQuestions = [];
     state.secondsElapsed = 0;
     state.folio = '';
