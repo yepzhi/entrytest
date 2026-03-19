@@ -598,7 +598,8 @@ const questions = [
         ],
         answer: 2,
         points: 1
-    },\n    {
+    },
+    {
         category: "Ciencia",
         question: "La lógica nos dice una explosión tiende a desacelerar conforme pase el tiempo, según un descubrimiento hecho en 1929 por Edwin Hubble, el Universo...",
         options: [
