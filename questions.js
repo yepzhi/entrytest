@@ -97,12 +97,12 @@ const questions = [
     },
     {
         category: "Ciencia",
-        question: "¿Para qué sirve el LHC en el CERN?",
+        question: "¿Qué es el CERN?",
         options: [
-            "A) Crear agujeros negros",
-            "B) Acelerar y chocar partículas para estudiar la física fundamental",
-            "C) Viajar en el tiempo",
-            "D) Producir energía"
+            "A) Un centro espacial internacional",
+            "B) La Organización Europea para la Investigación Nuclear",
+            "C) Un colisionador de agujeros negros",
+            "D) Un observatorio astronómico"
         ],
         answer: 1,
         points: 1
@@ -121,18 +121,6 @@ const questions = [
     },
     {
         category: "Tecnología",
-        question: "¿Qué es el WiFi?",
-        options: [
-            "A) Cable de fibra óptica",
-            "B) Tecnología inalámbrica por ondas electromagnéticas",
-            "C) Láser infrarrojo",
-            "D) Conexión satelital directa"
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Tecnología",
         question: "¿Qué significan las siglas 5G?",
         options: [
             "A) 5 Gigabytes",
@@ -141,18 +129,6 @@ const questions = [
             "D) 5 Grados de cobertura"
         ],
         answer: 1,
-        points: 1
-    },
-    {
-        category: "Tecnología",
-        question: "¿Para qué se usa comúnmente Bluetooth?",
-        options: [
-            "A) Conexión a largas distancias",
-            "B) Transmisión de energía",
-            "C) Conexión inalámbrica a corta distancia",
-            "D) Enfriar dispositivos"
-        ],
-        answer: 2,
         points: 1
     },
     {
@@ -181,12 +157,12 @@ const questions = [
     },
     {
         category: "Tecnología",
-        question: "¿Qué función cumple el láser en la tecnología?",
+        question: "¿Cómo funciona un láser?",
         options: [
-            "A) Enfriar metales",
-            "B) Amplificar luz por emisión estimulada de radiación (ej. fibra óptica, lectura óptica)",
-            "C) Aumentar gravedad",
-            "D) Generar ondas sonoras"
+            "A) Modulando fotones a través de campos magnéticos oscilantes",
+            "B) Amplificando luz mediante emisión estimulada de radiación y resonadores ópticos",
+            "C) Aumentando la gravedad cuántica local focalizada",
+            "D) Generando plasmas vibrantes paralelos en un vacío sellado"
         ],
         answer: 1,
         points: 1
@@ -207,10 +183,10 @@ const questions = [
         category: "Tecnología",
         question: "¿Por qué un disco SSD es superior a un HDD?",
         options: [
-            "A) Es más barato",
+            "A) Dura literalmente para siempre",
             "B) Usa memoria flash sin partes mecánicas móviles, siendo mucho más veloz",
-            "C) Usa discos de mayor tamaño",
-            "D) No requiere electricidad"
+            "C) Usa discos magnéticos de mayor tamaño",
+            "D) No requiere electricidad para guardar datos"
         ],
         answer: 1,
         points: 1
@@ -225,18 +201,6 @@ const questions = [
             "D) Alcalinas"
         ],
         answer: 2,
-        points: 1
-    },
-    {
-        category: "Tecnología",
-        question: "¿Qué significa Nanotecnología?",
-        options: [
-            "A) Crear satélites",
-            "B) Manipulación de la materia a escala nanométrica (átomos y moléculas)",
-            "C) Tecnología antigua",
-            "D) Programación de videojuegos"
-        ],
-        answer: 1,
         points: 1
     },
     {
@@ -312,25 +276,25 @@ const questions = [
         points: 1
     },
     {
-        category: "Programación",
-        question: "¿Qué diferencia a un IDE de un Editor de Código ligero?",
+        category: "Ciencia",
+        question: "¿Qué se organiza dentro de la Tabla Periódica?",
         options: [
-            "A) El Editor pesa más",
-            "B) Un IDE incluye herramientas completas integradas (compilador, depurador) para el desarrollo",
-            "C) Ninguna",
-            "D) El IDE es hardware"
+            "A) Las estrellas más cercanas",
+            "B) Todos los elementos químicos conocidos",
+            "C) Los ecosistemas del planeta",
+            "D) Las ecuaciones matemáticas fundamentales"
         ],
         answer: 1,
         points: 1
     },
     {
         category: "Programación",
-        question: "¿En qué se basa el Machine Learning (IA)?",
+        question: "¿En qué se basa el Machine Learning?",
         options: [
-            "A) Reglas físicas fijas",
-            "B) Sistemas que aprenden de grandes volúmenes de datos identificando patrones sin programación estricta",
-            "C) Bases de datos vacías",
-            "D) Circuitos análogos"
+            "A) Reglas lógicas y condicionales estrictas",
+            "B) Sistemas que aprenden de grandes volúmenes de datos identificando patrones sin programación explícita",
+            "C) Bases de datos vacías autogeneradas",
+            "D) Circuitos de hardware analógicos"
         ],
         answer: 1,
         points: 1
@@ -396,27 +360,27 @@ const questions = [
         points: 1
     },
     {
-        category: "Lógica",
-        question: "¿Qué es la 'Variable Controlada' en un experimento?",
+        category: "Ciencia",
+        question: "¿Cuál es la velocidad aproximada de la luz en el vacío?",
         options: [
-            "A) La que causa el error",
-            "B) La que se mantiene inalterada para no afectar el resultado",
-            "C) La que se rompe",
-            "D) La conclusión"
+            "A) 300,000 kilómetros por segundo",
+            "B) 343 metros por segundo",
+            "C) 1,000 kilómetros por hora",
+            "D) 30,000 kilómetros por hora"
         ],
-        answer: 1,
+        answer: 0,
         points: 1
     },
     {
         category: "Lógica",
-        question: "Si un TV cuesta $10,000 MXN y tiene 30% de descuento directo, pagarás:",
+        question: "Si un TV cuesta $5,000 MXN y tiene 30% de descuento directo, pagarás:",
         options: [
-            "A) $3,000",
+            "A) $3,500",
             "B) $6,000",
             "C) $7,000",
             "D) $8,500"
         ],
-        answer: 2,
+        answer: 0,
         points: 1
     },
     {
@@ -456,42 +420,6 @@ const questions = [
         points: 1
     },
     {
-        category: "Cultura Digital",
-        question: "¿Qué atiende la Ciberseguridad?",
-        options: [
-            "A) Reparar pantallas rotas",
-            "B) Proteger sistemas, redes y datos de ataques maliciosos o acceso no autorizado",
-            "C) Programar videojuegos interactivos",
-            "D) Vender seguros cibernéticos"
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Cultura Digital",
-        question: "¿Qué es el Phishing?",
-        options: [
-            "A) Pesca deportiva",
-            "B) Estafa cibernética suplantando entidades de confianza para robar datos o contraseñas",
-            "C) Una clase de virus de hardware",
-            "D) Una forma legal de invertir"
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
-        category: "Ciencia",
-        question: "Si mezclas agua a 100°C y agua a 0°C en proporciones iguales en un termo ideal, obtendrás:",
-        options: [
-            "A) 100°C",
-            "B) 50°C",
-            "C) 0°C",
-            "D) Se congela mágicamente"
-        ],
-        answer: 1,
-        points: 1
-    },
-    {
         category: "Ciencia",
         question: "Para comprobar si una planta necesita luz, la mejor prueba es:",
         options: [
@@ -513,18 +441,6 @@ const questions = [
             "D) Que la magia existe"
         ],
         answer: 0,
-        points: 1
-    },
-    {
-        category: "Ciencia",
-        question: "¿Diferencia entre causa y correlación?",
-        options: [
-            "A) Ninguna",
-            "B) Correlación es coincidencia; causa exige que una variable origine directamente la otra",
-            "C) Correlación siempre es falsa",
-            "D) Causa es coincidencia temporal"
-        ],
-        answer: 1,
         points: 1
     },
     {
@@ -555,36 +471,12 @@ const questions = [
         category: "Tecnología",
         question: "¿A qué denominamos 'App' en tecnología móvil?",
         options: [
-            "A) Cualquier chip",
+            "A) Cualquier procesador",
             "B) Programa de software diseñado para realizar una actividad específica para el usuario",
-            "C) Antena de WiFi gigante",
-            "D) Batería portátil"
+            "C) Antena de WiFi",
+            "D) Batería portátil inteligente"
         ],
         answer: 1,
-        points: 1
-    },
-    {
-        category: "Ciencia",
-        question: "¿Qué afirma la Primera Ley de Newton, o Ley de Inercia?",
-        options: [
-            "A) Todo cuerpo persevera en su reposo o movimiento uniforme a menos que actúe otra fuerza",
-            "B) La masa no importa",
-            "C) Energía y materia desaparecen siempre",
-            "D) Solo hay fuerza a nivel celular"
-        ],
-        answer: 0,
-        points: 1
-    },
-    {
-        category: "Ciencia",
-        question: "¿Qué mide un 'Voltio' en electrónica?",
-        options: [
-            "A) El peso de los cables",
-            "B) El amperaje o corriente pura atómica",
-            "C) La fuerza o diferencia de potencial que empuja a los electrones por el circuito",
-            "D) El volumen de sonido en bocinas"
-        ],
-        answer: 2,
         points: 1
     },
     {
@@ -625,12 +517,12 @@ const questions = [
     },
     {
         category: "Programación",
-        question: "¿Por qué son demandados los lenguajes de programación en 2026?",
+        question: "¿Por qué son demandados los lenguajes de programación en la actualidad?",
         options: [
-            "A) Para leer libros viejos",
+            "A) Para leer libros antiguos digitalizados",
             "B) Porque son la clave para controlar, diseñar y automatizar toda la revolución de máquinas y software",
-            "C) Porque se ven estéticos",
-            "D) Por tradición histórica obsoleta"
+            "C) Simplemente porque se ven estéticos",
+            "D) Por una tradición histórica obsoleta"
         ],
         answer: 1,
         points: 1
@@ -655,18 +547,6 @@ const questions = [
             "B) No existe en el universo",
             "C) Sus partículas tienen igual masa que la materia pero carga eléctrica opuesta",
             "D) Solo es vista en cuentos"
-        ],
-        answer: 2,
-        points: 1
-    },
-    {
-        category: "Ciencia",
-        question: "Los fotones de luz visible y los de rayos X forman parte de o del:",
-        options: [
-            "A) Espectro Sonoro",
-            "B) Gases Atmosféricos Nobles",
-            "C) Conjunto o grupo del Espectro Electromagnético radiado continuo",
-            "D) Rayos Gamma oscuros"
         ],
         answer: 2,
         points: 1
@@ -717,6 +597,341 @@ const questions = [
             "D) Por tener nombres llamativos ingleses de negocios turbios"
         ],
         answer: 2,
+        points: 1
+    },\n    {
+        category: "Ciencia",
+        question: "La lógica nos dice una explosión tiende a desacelerar conforme pase el tiempo, según un descubrimiento hecho en 1929 por Edwin Hubble, el Universo...",
+        options: [
+            "A) Esta desacelerando",
+            "B) Esta acelerando",
+            "C) Esta inmóvil",
+            "D) Se está contrayendo lentamente"
+        ],
+        answer: 1,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué es la fusión termonuclear?",
+        options: [
+            "A) Es presionar átomos con presión y calor hasta que se unen y forman uno nuevo",
+            "B) Es dividir átomos con presión y calor hasta que se separan en dos átomos individuales",
+            "C) Es el enfriamiento de núcleos atómicos para cristalizarlos en metales pesados",
+            "D) Es un fenómeno químico que emite radiación infrarroja únicamente"
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Hace cuanto tiempo se estima que sucedió lo que conocemos como Big Bang?",
+        options: [
+            "A) Hace 3 mil millones de años.",
+            "B) Hace casi 14 mil millones de años.",
+            "C) Hace casi 10 mil millones de años.",
+            "D) Hace unos 4 mil millones de años."
+        ],
+        answer: 1,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué es la Teoría General de la Relatividad?",
+        options: [
+            "A) Es una teoría que describe como el espacio y el tiempo se curvan en presencia de gravedad.",
+            "B) Es una teoría que describe como la gravedad se curva con la velocidad de un objeto.",
+            "C) Es una teoría que describe como el tiempo es relativo a la conciencia de las personas.",
+            "D) Es una teoría que explica la composición atómica del acero."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "Al caer un rayo en la distancia en una tormenta, ¿Qué sucede con la luz y el sonido?",
+        options: [
+            "A) Escuchamos primero el ruido y luego vemos el rayo.",
+            "B) Escuchamos y vemos al mismo tiempo.",
+            "C) Vemos primero la luz y luego escuchamos el rayo.",
+            "D) El sonido siempre viaja más rápido en zonas húmedas."
+        ],
+        answer: 2,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cuál es el nombre y distancia de la estrella más cercana al Sol?",
+        options: [
+            "A) Sirius, 8 años luz.",
+            "B) Vega, 3 años luz.",
+            "C) Alpha Centauri, 4 años luz.",
+            "D) Andrómeda, 10 millones de años."
+        ],
+        answer: 2,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cómo se llama la galaxia que se dirige hacia nosotros con curso de colisión y en cuanto tiempo ocurrirá?",
+        options: [
+            "A) Andrómeda y colisionará con la vía lactea en 2.5 mil millones de años.",
+            "B) Galaxia Triángulo y colisionará con la vía láctea en 500 millones de años.",
+            "C) Andrómeda y colisionará con la vía lactea en mil millones de años.",
+            "D) Las Nebulosas de Orión y colisionará mañana."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "Del total de toda la masa del Sistema Solar ¿Que porcentaje aproximado concentra el Sol?",
+        options: [
+            "A) 99%",
+            "B) 95%",
+            "C) 90%",
+            "D) 70%"
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cuál es la temperatura promedio del espacio intergaláctico?",
+        options: [
+            "A) -270 grados celcius.",
+            "B) 24 grados celcius.",
+            "C) 0 grados celcius.",
+            "D) Mayor de 100 grados celcius."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "En 1687, afirmó que cualquier objeto con masa posee gravedad y su relación directa a mayor masa mayor gravedad y la describió como una 'misteriosa acción a distancia'.",
+        options: [
+            "A) Issac Newton",
+            "B) Albert Einstein",
+            "C) Max Planck",
+            "D) Galileo Galilei"
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cuál es el valor más cercano a 1G ó fuerza de gravedad en la tierra?",
+        options: [
+            "A) 10.12 m/s2",
+            "B) 6.7 m/s2",
+            "C) 9.8 m/s2",
+            "D) 1.5 m/s2"
+        ],
+        answer: 2,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué pasa con el tiempo según a teoría de la relatividad general de Albert Einstein si se viaja una velocidad cercana a 'c' (velocidad de la luz)?",
+        options: [
+            "A) El tiempo es más rápido para el viajero astronauta.",
+            "B) Los tiempos son los mismos ya que al desacelerar se revierte la dilatación del tiempo provocada.",
+            "C) El tiempo es más lento para el viajero y más rápido para el observador.",
+            "D) Ambos colisionan en diferentes tiempos dimensionales sin verse afectados."
+        ],
+        answer: 2,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cómo sería un cuerpo humano si la gravedad en la Tierra fuera el doble ó más?",
+        options: [
+            "A) Resultaría en una estatura más baja y cuerpos más robustos.",
+            "B) Resultaría en una estatura más alta y cuerpos menos robustos.",
+            "C) Los humanos desarrollarían colas como reptiles grandes.",
+            "D) No habría alteración física anatómica documentable a largo plazo."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿A qué altura sobre el nivel del mar se considera que se está en el espacio?",
+        options: [
+            "A) 100 kilómetros",
+            "B) 80 kilómetros",
+            "C) 90 kilómetros",
+            "D) 10,000 metros"
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "Si los planetas del Sistema Solar no estuvieran girando alrededor del Sol a su velocidad determinada. ¿Caerían directamente hacia el Sol?",
+        options: [
+            "A) Sí, serían atraidos directamente.",
+            "B) No, porque cada planeta tiene su masa, su propia gravedad y se mantendrían en equilibrio donde mismo.",
+            "C) Se detendrían permanentemente y rebotarían si se alejan mucho.",
+            "D) Caerían entre ellos mismos antes de tocar la corona solar por gravedad atada."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cuál es el elemento mayor constituyente de nuestra atmósfera?",
+        options: [
+            "A) Oxígeno",
+            "B) Nitrógeno",
+            "C) Carbono",
+            "D) Helio"
+        ],
+        answer: 1,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué planeta tiene 90 veces más la presión atmosférica de la tierra?",
+        options: [
+            "A) Júpiter",
+            "B) Venus",
+            "C) Saturno",
+            "D) Marte"
+        ],
+        answer: 1,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Dónde se formaron los elementos, como el Helio, Oxígeno, Carbono, etc.?",
+        options: [
+            "A) En el interior de estrellas como el Sol y supernovas esparcedoras.",
+            "B) A altas temperaturas en las capas internas de la Tierra primitiva.",
+            "C) En el Big Bang y fueron esparcidos por la misma explosión al instante 0.",
+            "D) Dentro de los volcanes inactivos terrestres hace millones de siglos."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "En la actualidad, ¿Bajo que proceso funcionan todas las plantas nucleares de generación de energía eléctrica?",
+        options: [
+            "A) Fusión nuclear.",
+            "B) Fisión nuclear.",
+            "C) Fricción neutrónica.",
+            "D) Interacción bosónica."
+        ],
+        answer: 1,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué proceso nuclear produce más energía?",
+        options: [
+            "A) Fusión nuclear.",
+            "B) Fisión nuclear.",
+            "C) Fricción controlada de radiación oscura.",
+            "D) Magnetismo inverso electroquivalente."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué es la secuencia principal? De la que forman parte el 90% de las estrellas del Universo.",
+        options: [
+            "A) Se refiere a estrellas que convierten Hidrógeno en Helio.",
+            "B) Se refiere a estrellas que convierten Helio en Oxígeno.",
+            "C) Se refiere a estrellas que convierten Hidrógeno en Carbono.",
+            "D) Se refiere a estrellas que consumen helio y agua galáctica."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cada cuanto se estima que ocurren Supernovas en nuestra Galaxia?",
+        options: [
+            "A) Se estiman dos ó tres cada siglo.",
+            "B) Se estima una cada siglo.",
+            "C) Suelen ocurrir una cada 14 millones de años.",
+            "D) Surgen a diario sin falta."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Como finalizará su vida nuestro Sol?",
+        options: [
+            "A) Como una Supernova titánica explosiva.",
+            "B) Como un agujero negro que devorará todo nuestro sistema solar.",
+            "C) Como una gigante roja para después dejar una enana blanca.",
+            "D) Como una estrella de neutrones."
+        ],
+        answer: 2,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué es el CERN y FermiLab?",
+        options: [
+            "A) Son lugares donde se investigan sobre la fusión nuclear para generar electricidad gratuita.",
+            "B) Son lugares donde se colisionan partículas para descubrir los secretos del Universo.",
+            "C) Son lugares donde se colisionan partículas para generar micro agujeros negros e investigarlos.",
+            "D) Son los centros astronómicos de la Antártida especializados en materia oscura."
+        ],
+        answer: 1,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Cuál es el único elemento que fue creado por completo 100% durante el Big Bang?",
+        options: [
+            "A) Hidrógeno",
+            "B) Carbono",
+            "C) Oxígeno",
+            "D) Silicio"
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué son las hormonas?",
+        options: [
+            "A) Son mensajeras, después de ser secretadas viajan por todo el torrente sanguíneo llevando instrucciones de activación/desactivación de funciones muy variadas.",
+            "B) Son excretadas al exterior para atraer al sexo opuesto de forma olfativa biológica.",
+            "C) Son medicamentos biológicos utilizados para regular y coagular puramente en casos de venas rotas.",
+            "D) Son células que destruyen patógenos peligrosos o virus intracelulares nocivos."
+        ],
+        answer: 0,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "A nivel de estructura atómica, ¿Cuál es la principal diferencia entre un elemento y otro?",
+        options: [
+            "A) La temperatura y campo estelar natural donde fue creado.",
+            "B) Solo el elemento de carbono los hace orgánicos o artificiales.",
+            "C) El numero ó cantidad de protones, neutrones y electrones.",
+            "D) El peso y estado en que fueron recolectados la primera vez por un ser vivo."
+        ],
+        answer: 2,
+        points: 1
+    },
+    {
+        category: "Ciencia",
+        question: "¿Qué parte del atomo concentra más del 99% de su masa?",
+        options: [
+            "A) En los electrones que orbitan por su energía cinética inmensa en vació interrelacional.",
+            "B) El núcleo del mismo donde están los protones y neutrones contenidos altamente fuertemente.",
+            "C) En la nube de probabilidad magnética que cubre el isótopo reactivo.",
+            "D) Distribuida uniformemente a lo largo de su órbita final exterior radiactiva."
+        ],
+        answer: 1,
         points: 1
     }
 ];
