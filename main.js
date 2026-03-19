@@ -1,4 +1,4 @@
-import questions from './questions.js';
+import questions from './questions.js?v=2';
 import translations from './translations.js';
 
 // --- Firebase Configuration ---
