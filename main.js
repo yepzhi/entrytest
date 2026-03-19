@@ -312,7 +312,7 @@ function loadQuestion() {
         if (state.answers[state.currentQuestionIndex] === idx) optionEl.classList.add('selected');
         
         optionEl.innerHTML = `
-            <div class="option-dot">${labels[idx]}</div>
+            <div class="option-dot"></div>
             <span class="option-text">${opt}</span>
         `;
         
