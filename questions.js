@@ -807,7 +807,7 @@ const questions = [
         category: "Ciencia",
         question: "¿Dónde se formaron los elementos, como el Helio, Oxígeno, Carbono, etc.?",
         options: [
-            "A) En el interior de estrellas como el Sol y supernovas esparcedoras.",
+            "A) En el interior de estrellas como el Sol y en supernovas.",
             "B) A altas temperaturas en las capas internas de la Tierra primitiva.",
             "C) En el Big Bang y fueron esparcidos por la misma explosión al instante 0.",
             "D) Dentro de los volcanes inactivos terrestres hace millones de siglos."
