@@ -321,7 +321,7 @@ function loadQuestion() {
     });
     
     elements.nextBtn.innerHTML = state.currentQuestionIndex === state.shuffledQuestions.length - 1 ? translations[state.language].btn_finish : translations[state.language].btn_next;
-    elements.nextBtn.disabled = state.answers[state.currentQuestionIndex] === null;
+    elements.nextBtn.disabled = false;
 
     startQuestionTimer();
 }
@@ -359,7 +359,7 @@ function formatTime(totalSeconds) {
 }
 
 function autoAdvanceOnTimeout() {
-    if (state.answers[state.currentQuestionIndex] === null) {
+    if (state.answers[state.currentQuestionIndex] === null || state.answers[state.currentQuestionIndex] === undefined) {
         state.answers[state.currentQuestionIndex] = -1; // Mark as skipped/timeout
     }
     showNext();
@@ -374,12 +374,15 @@ function selectOption(index) {
     elements.nextBtn.disabled = false;
 }
 
-
-
 function showNext() {
+    // Si no seleccionó opción, marcar como omitida/no sé para no trabar el flujo
+    if (state.answers[state.currentQuestionIndex] === null || state.answers[state.currentQuestionIndex] === undefined) {
+        state.answers[state.currentQuestionIndex] = -1;
+    }
     if (state.currentQuestionIndex < state.shuffledQuestions.length - 1) {
         state.currentQuestionIndex++;
         loadQuestion();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         syncProgressToFirebase();
     } else {
         finishQuiz();
